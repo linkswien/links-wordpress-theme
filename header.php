@@ -45,9 +45,10 @@
 		</div--><!-- .site-branding -->
 		<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-3',
-				'menu_id'        => 'tertiary-menu',
-				'container'       => 'div'
+				'theme_location'  => 'menu-3',
+				'menu_id'         => 'tertiary-menu',
+				'container'       => 'div',
+				'container_class' => 'menu-tertiary-container'
 			) );
 			?>
 		<div id="mainbar">	
