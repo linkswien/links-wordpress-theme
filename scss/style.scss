@@ -10,6 +10,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Theme colors
 # Typography
 # Elements
 # Forms
@@ -34,11 +35,19 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 @import 'normalize';
 
+/**
+    Theme colors
+*/
+
+$orange: #FA7F16;
+$violet: #5e219e;
+$violetDark: #43187E;
+
 /* Forms
 	 ========================================================================== */
 
 	 #main button, #footer-1 button {
-		background-color: #FA7F16;
+		background-color: $orange;
 		color: #fff;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -59,7 +68,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 	}
 
 	#main input:focus, #footer-1 input:focus {
-		box-shadow: 0 0 0 2px #FA7F16;
+		box-shadow: 0 0 0 2px $orange;
 	}
 
 /**
@@ -435,7 +444,7 @@ table {
 
 #tertiary-menu li a {
 	display: inline-block;
-	color: #FA7F16;
+	color: $orange;
 	padding: .5em 1em;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -503,7 +512,7 @@ table {
 .main-navigation a:hover,
 .main-navigation a:focus,
 .main-navigation a:active {
-	color: #5E209E;
+	color: $violet;
 }
 
 .main-navigation .menu-item-has-children>a::after {
@@ -511,7 +520,7 @@ table {
 	position: relative;
 	top: -3px;
 	left: 10px;
-	border: solid #FA7F16;
+	border: solid $orange;
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 3px;
@@ -678,7 +687,7 @@ main a {
 }
 
 main a:hover, a:focus, a:active {
-	color: #FA7F16;
+	color: $orange;
 }
 
 main a:focus {
@@ -694,7 +703,7 @@ main a:hover, a:active {
 --------------------------------------------------------------*/
 
 #footer-1 {
-	background-color: #43187E;
+	background-color: $violetDark;
 	padding: 2em;
 	color: white;
 	display: flex;
@@ -703,7 +712,7 @@ main a:hover, a:active {
 }
 
 #footer-2 {
-	background-color: #572998;
+	background-color: $violet;
 	padding: 2em;
 	color: white;
 	display: flex;
@@ -756,13 +765,13 @@ footer a.social-media {
 }
 
 footer a.social-media:hover {
-	color: #FA7F16;
+	color: $orange;
 }
 
 footer a.cta-footer {
 	display: inline-block;
 	margin-top: 1em;
-	color: #FA7F16;
+	color: $orange;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -1032,14 +1041,14 @@ object {
 
 .full-width-purple {
 	color:white;
-	background-color: #5E209E;
+	background-color: $violet;
 	margin-left: -2rem;
 	margin-right: -2rem;
 	padding: 2rem;
 }
 
 .full-width-purple a {
-	color: #FA7F16;
+	color: $orange;
 text-decoration: none;}
 
 .full-width-purple a:hover, a:focus, a:active {
