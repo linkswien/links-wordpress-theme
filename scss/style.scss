@@ -36,6 +36,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import 'normalize';
 
 /**
+    Font import
+*/
+
+@import 'fonts';
+
+/**
     Theme colors
 */
 
@@ -277,7 +283,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
