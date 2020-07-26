@@ -81,6 +81,25 @@ if ( ! function_exists( 'links_wien_theme_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );*/
+
+		// Editor Color Palette
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name'  => __( 'Orange', 'links-wien' ),
+			'slug'  => 'orange',
+			'color'	=> '#FA7F16',
+		),
+		array(
+			'name'  => __( 'Lila', 'links-wien' ),
+			'slug'  => 'violet',
+			'color' => '#5e219e',
+		),
+		array(
+			'name'  => __( 'Dunkles Lila', 'links-wien' ),
+			'slug'  => 'violetDark',
+			'color' => '#43187E',
+		)
+	) );
 	}
 endif;
 add_action( 'after_setup_theme', 'links_wien_theme_setup' );

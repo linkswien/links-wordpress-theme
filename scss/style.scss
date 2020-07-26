@@ -49,6 +49,30 @@ $orange: #FA7F16;
 $violet: #5e219e;
 $violetDark: #43187E;
 
+// Gutenberg color options
+// -- see editor-color-palette in functions.php
+
+.has-orange-color {
+	color: $orange;
+}
+.has-orange-background-color {
+	background-color: $orange;
+}
+
+.has-violet-color {
+	color: $violet;
+}
+.has-violet-background-color {
+	background-color: $violet;
+}
+.has-violet-dark-color {
+	color: $violetDark;
+}
+
+.has-violet-dark-background-color {
+	background-color: $violetDark;
+}
+
 /* Forms
 	 ========================================================================== */
 
