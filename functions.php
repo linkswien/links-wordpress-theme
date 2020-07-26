@@ -100,6 +100,9 @@ if ( ! function_exists( 'links_wien_theme_setup' ) ) :
 			'color' => '#43187E',
 		)
 	) );
+
+	add_editor_style( 'editor-style.css' );
+	add_theme_support( 'editor-styles' );
 	}
 endif;
 add_action( 'after_setup_theme', 'links_wien_theme_setup' );
