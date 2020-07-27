@@ -1093,3 +1093,36 @@ text-decoration: none;}
 	  padding-right: calc(50vw - 33rem);
 	}
   }
+
+/*--------------------------------------------------------------
+## Events Manager event list
+--------------------------------------------------------------*/
+
+.events-table {
+	
+	width: auto;
+	border-collapse: collapse;
+
+	thead {
+		margin-bottom: .5em;
+	}
+	
+	th {
+		text-align: start;
+		color: $violet;
+		padding: .25em;
+	}
+
+	td {
+		padding: .4em 5em 0.4em .25em;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	tr {
+		padding: .2em;
+	}
+
+	tr:last-Child td {
+		border: none;
+	}
+}

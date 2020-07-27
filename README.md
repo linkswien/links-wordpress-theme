@@ -4,7 +4,7 @@
 
 This theme is tested to work with the following plugins:
 
-- Events: [Simple Event Planner](https://wordpress.org/plugins/simple-event-planner/)
+- Events: [Events Manager](https://de.wordpress.org/plugins/events-manager/)
 - Slider: [Smart Slider 3](https://wordpress.org/plugins/smart-slider-3/)
 
 ## Local Development
