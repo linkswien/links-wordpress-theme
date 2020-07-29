@@ -76,7 +76,7 @@ $violetDark: #43187E;
 /* Forms
 	 ========================================================================== */
 
-	 #main button, #footer-1 button, #main input[type=submit], #footer-1 input[type=submit] {
+	 #main button, #footer-1 button, #main input[type=submit], #footer-1 input[type=submit], .button {
 		background-color: $orange;
 		color: #fff;
 		text-transform: uppercase;
@@ -85,6 +85,13 @@ $violetDark: #43187E;
 		border: none;
 		border-radius: 4px;
 		padding: 12px 15px 10px 15px;
+		text-decoration: none;
+		outline: none;
+		display: inline-block;
+		&:hover, &:focus, &:active {
+			color: #fff;
+			background-color: darken($orange, 5);
+		}
 	}
 	
 	#main input:not([type="submit"]), #footer-1 input:not([type="submit"]) {
