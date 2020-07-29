@@ -3,16 +3,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Links Wien Theme\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/links-wien-theme\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/links-wien-"
+"theme\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-07-29T19:56:16+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"PO-Revision-Date: 2020-07-29 22:04+0200\n"
+"X-Generator: Poedit 2.4\n"
 "X-Domain: links-wien-theme\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_AT\n"
 
 #. Theme Name of the theme
 msgid "Links Wien Theme"
@@ -20,27 +23,28 @@ msgstr ""
 
 #: 404.php:20
 msgid "Page not found"
-msgstr ""
+msgstr "Diese Seite konnte nicht gefunden werden!"
 
 #: 404.php:25
 msgid "We are sorry, but that page can&rsquo;t be found"
-msgstr ""
+msgstr "Es tut uns leid, aber die Seite, die du suchst, existiert nicht."
 
 #: 404.php:26
 msgid "While you are here, how about a donation to LINKS?"
 msgstr ""
+"Aber wenn du schonmal hier bist, wie wäre es mit einer Spende für LINKS?"
 
 #: 404.php:30
 msgid "Donate now"
-msgstr ""
+msgstr "Jetzt spenden"
 
 #: 404.php:34
 msgid "Or try a new search."
-msgstr ""
+msgstr "Oder du versuchst es mit einer neuen Suche."
 
 #: 404.php:36
 msgid "Search"
-msgstr ""
+msgstr "Suche"
 
 #. translators: 1: title.
 #: comments.php:35
@@ -75,8 +79,7 @@ msgstr ""
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:134
-#: functions.php:143
+#: functions.php:134 functions.php:143
 msgid "Add widgets here."
 msgstr ""
 
@@ -127,8 +130,7 @@ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:99
-#: template-parts/content-page.php:36
+#: inc/template-tags.php:99 template-parts/content-page.php:36
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
@@ -139,23 +141,27 @@ msgstr ""
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nichts gefunden"
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:24
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-none.php:37
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Es tut uns leid, aber zu dieser Seite haben wir nichts gefunden."
 
 #: template-parts/content-none.php:44
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:23
-#: template-parts/content.php:50
+#: template-parts/content-page.php:23 template-parts/content.php:50
 msgid "Pages:"
 msgstr ""
 

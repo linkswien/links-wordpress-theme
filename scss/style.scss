@@ -76,7 +76,7 @@ $violetDark: #43187E;
 /* Forms
 	 ========================================================================== */
 
-	 #main button, #footer-1 button {
+	 #main button, #footer-1 button, #main input[type=submit], #footer-1 input[type=submit] {
 		background-color: $orange;
 		color: #fff;
 		text-transform: uppercase;
@@ -87,17 +87,18 @@ $violetDark: #43187E;
 		padding: 12px 15px 10px 15px;
 	}
 	
-	#main input, #footer-1 input {
+	#main input:not([type="submit"]), #footer-1 input:not([type="submit"]) {
 		border-radius: 4px;
 		border: none;
 		transition: box-shadow .2s ease;
+		outline: none;
 	}
 	
-	#main input {
+	#main input:not([type="submit"]) {
 		box-shadow: 0 0 0 1px #404040;
 	}
 
-	#main input:focus, #footer-1 input:focus {
+	#main input:not([type="submit"]):focus, #footer-1 input:not([type="submit"]):focus {
 		box-shadow: 0 0 0 2px $orange;
 	}
 
@@ -1124,5 +1125,19 @@ text-decoration: none;}
 
 	tr:last-Child td {
 		border: none;
+	}
+}
+
+/*--------------------------------------------------------------
+## 404 page
+--------------------------------------------------------------*/
+
+.error-404 {
+	h1, .page-content {
+		text-align: center;
+	}
+	.search-input {
+		padding: .25em .5em;
+		margin-bottom: 2em;
 	}
 }
