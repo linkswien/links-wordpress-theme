@@ -474,10 +474,24 @@ table {
 #tertiary-menu {
 	text-align: right;
 	margin: 0 1em 0 0;
+	position: relative;
 }
 
 #tertiary-menu li {
 	display: inline;
+	position: relative;
+}
+
+#tertiary-menu ul {
+	display: none;
+	background-color: #000;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+#tertiary-menu li:hover ul, #tertiary-menu .toggled ul {
+	display: block;
 }
 
 #tertiary-menu li a {
@@ -553,6 +567,7 @@ table {
 	color: $violet;
 }
 
+#tertiary-menu .menu-item-has-children>a::after,
 .main-navigation .menu-item-has-children>a::after {
 	content: "";
 	position: relative;
