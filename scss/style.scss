@@ -76,7 +76,7 @@ $violetDark: #43187E;
 /* Forms
 	 ========================================================================== */
 
-	 #main button, #footer-1 button, #main input[type=submit], #footer-1 input[type=submit], .button {
+	 #page button, #page input[type=submit], #page .button {
 		background-color: $orange;
 		color: #fff;
 		text-transform: uppercase;
@@ -92,20 +92,20 @@ $violetDark: #43187E;
 			color: #fff;
 			background-color: darken($orange, 5);
 		}
+		cursor: pointer;
 	}
 	
-	#main input:not([type="submit"]), #footer-1 input:not([type="submit"]) {
+	#page input:not([type="submit"]) {
+		height: 38px;
 		border-radius: 4px;
 		border: none;
 		transition: box-shadow .2s ease;
 		outline: none;
-	}
-	
-	#main input:not([type="submit"]) {
+		padding: 6px 10px;
 		box-shadow: 0 0 0 1px #404040;
 	}
 
-	#main input:not([type="submit"]):focus, #footer-1 input:not([type="submit"]):focus {
+	#page input:not([type="submit"]):focus, #footer-1 input:not([type="submit"]):focus {
 		box-shadow: 0 0 0 2px $orange;
 	}
 
@@ -1161,5 +1161,17 @@ text-decoration: none;}
 	.search-input {
 		padding: .25em .5em;
 		margin-bottom: 2em;
+	}
+}
+
+/*--------------------------------------------------------------
+## search widget in the footer
+--------------------------------------------------------------*/
+
+#page footer {
+	.search-submit {
+		width: auto;
+		height: 38px;
+		padding: 0px 12px;
 	}
 }
