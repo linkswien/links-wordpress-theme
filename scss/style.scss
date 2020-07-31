@@ -35,6 +35,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 @import 'normalize';
 
+* {
+	margin: 0;
+}
+
 /**
     Font import
 */
@@ -1173,5 +1177,51 @@ text-decoration: none;}
 		width: auto;
 		height: 38px;
 		padding: 0px 12px;
+	}
+}
+
+/*--------------------------------------------------------------
+## search results page
+--------------------------------------------------------------*/
+
+#main.search-results-page {
+	header {
+		display: block;
+		margin: 0;
+	}
+	h2 a {
+		color: $violet;
+		text-decoration: none;
+		&:hover, &:focus, &:active {
+			text-decoration: underline;
+		}
+	}
+	.entry-meta, .entry-meta a {
+		color: #777;
+	}
+	.entry-meta a {
+		&:hover, &:focus, &:active {
+			color: $orange;
+		}
+	}
+	.post-thumbnail {
+		float: right;
+		margin: 0 0 1em 1em;
+	}
+	.attachment-post-thumbnail {
+		width: 180px;
+		float: right;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	.entry-summary {
+		margin-top: .5em;
+	}
+	article {
+		margin-bottom: 2em;
+	}
+	.more-link {
+		clear: both;
 	}
 }
