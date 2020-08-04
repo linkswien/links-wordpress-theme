@@ -52,6 +52,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 $orange: #FA7F16;
 $violet: #5e219e;
 $violetDark: #43187E;
+$white: #fff;
 
 // Gutenberg color options
 // -- see editor-color-palette in functions.php
@@ -69,12 +70,19 @@ $violetDark: #43187E;
 .has-violet-background-color {
 	background-color: $violet;
 }
+
 .has-violet-dark-color {
 	color: $violetDark;
 }
-
 .has-violet-dark-background-color {
 	background-color: $violetDark;
+}
+
+.has-white-color {
+	color: $white;
+}
+.has-white-background-color {
+	background-color: $white;
 }
 
 /* Forms
