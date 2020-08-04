@@ -797,10 +797,17 @@ main a:hover, a:active {
 	outline: 0;
 }
 
-.wp-block-group__inner-container {
+.entry-content > .wp-block-group > .wp-block-group__inner-container {
 	margin: 0 auto;
-	max-width: 70rem;
+	max-width: 50rem;
 	padding: 2em;
+}
+.entry-content > .wp-block-group > .wp-block-group__inner-container.wider {
+	max-width: 70rem;
+}
+
+.padded-box {
+	padding: 2rem;
 }
 
 /*--------------------------------------------------------------
