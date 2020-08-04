@@ -353,6 +353,26 @@ h4 {
 	color: $violet;
 }
 
+h5 {
+	font-size: 0.9rem;
+}
+
+h5 a {
+	color: $orange;
+	text-decoration: none;
+}
+h5 a::after {
+	content: "";
+	position: relative;
+	top: 0.1rem;
+	left: 0.4rem;
+	border: solid #fa7f16;
+	border-width: 0 0.2rem 0.2rem 0;
+	display: inline-block;
+	padding: 0.4rem;
+	transform: rotate(-45deg);
+}
+
 p {
 	margin: 1rem 0;
 }
@@ -761,7 +781,7 @@ main .has-post-thumbnail header img {
 
 
 main a {
-	color: #404040;
+	color: $violetDark;
 	transition: color .2s ease-in-out;
 }
 
