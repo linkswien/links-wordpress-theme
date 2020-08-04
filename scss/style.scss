@@ -736,12 +736,6 @@ main .has-post-thumbnail header img {
 }
 
 
-main {
-	margin: 0 auto 1em auto;
-	max-width: 70rem;
-	padding: 0 2em;
-}
-
 main a {
 	color: #404040;
 	transition: color .2s ease-in-out;
@@ -757,6 +751,12 @@ main a:focus {
 
 main a:hover, a:active {
 	outline: 0;
+}
+
+.wp-block-group__inner-container {
+	margin: 0 auto;
+	max-width: 70rem;
+	padding: 2em;
 }
 
 /*--------------------------------------------------------------
