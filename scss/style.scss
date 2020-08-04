@@ -358,7 +358,7 @@ h5 {
 }
 
 h5 a {
-	color: $orange;
+	color: $orange !important;
 	text-decoration: none;
 }
 h5 a::after {
@@ -802,7 +802,7 @@ main a:hover, a:active {
 	max-width: 50rem;
 	padding: 2em;
 }
-.entry-content > .wp-block-group > .wp-block-group__inner-container.wider {
+.entry-content > .wp-block-group.wider > .wp-block-group__inner-container {
 	max-width: 70rem;
 }
 
