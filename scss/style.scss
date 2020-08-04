@@ -326,11 +326,31 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	line-height: 1.1;
+	margin: 1rem 0;
 	clear: both;
 }
 
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1rem;
+	color: $violet;
+}
+
 p {
-	margin-bottom: 1.5em;
+	margin: 1rem 0;
 }
 
 dfn, cite, em, i {
