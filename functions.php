@@ -192,3 +192,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Activate shortcuts in footers.
+ */
+add_filter(‚widget_text‘, ‚do_shortcode‘);
