@@ -28,6 +28,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Media
 	## Captions
 	## Galleries
+# Mautic Form
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -106,7 +107,7 @@ $white: #fff;
 		}
 		cursor: pointer;
 	}
-	
+
 	#page input:not([type="submit"]) {
 		height: 38px;
 		border-radius: 4px;
@@ -658,7 +659,7 @@ table {
 		margin: 0;
 		display: flex;
 	}
-	
+
 	#secondbar {
 		padding: .2em 1em;
 	}
@@ -693,21 +694,21 @@ table {
 		background-color: #fff;
 		z-index: 99999;
 	}
-	
+
 	.main-navigation ul ul ul {
 		left: -999em;
 		top: 0;
 	}
-	
+
 	.main-navigation ul ul li:hover > ul,
 	.main-navigation ul ul li.focus > ul {
 		left: 100%;
 	}
-	
+
 	.main-navigation ul ul a {
 		--width: 200px;
 	}
-	
+
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
 		left: auto;
@@ -1180,14 +1181,14 @@ text-decoration: none;}
 --------------------------------------------------------------*/
 
 .events-table {
-	
+
 	width: auto;
 	border-collapse: collapse;
 
 	thead {
 		margin-bottom: .5em;
 	}
-	
+
 	th {
 		text-align: start;
 		color: $violet;
@@ -1279,3 +1280,10 @@ text-decoration: none;}
 		clear: both;
 	}
 }
+
+/*--------------------------------------------------------------
+## Mautic form
+--------------------------------------------------------------*/
+	.mauticform-row{
+		margin-top: 1em
+	}
