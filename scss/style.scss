@@ -1307,6 +1307,10 @@ text-decoration: none;}
 	  margin-right: 1em;
 	}
 
+	#footer-1 .mauticform-field-6{
+		margin-top: 2.5em;
+	}
+
 	#footer-2 .menu{
 		display: flex;
 		flex-wrap: wrap;
@@ -1318,7 +1322,11 @@ text-decoration: none;}
 		margin-right: 1em;
 	}
 
-	#footer-2 .sub-menu{
+	#footer-2 .menu-item-has-children{
+		margin-right: 3em;
+	}
+
+	#footer-2 .sub-menu .menu-item{
 		font-weight: normal;
-		display: flex;	
+		display: flex;
 	}
