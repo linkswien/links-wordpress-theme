@@ -1294,6 +1294,15 @@ text-decoration: none;}
 	}
 
 	.mauticform-freehtml{
-		margin-top:-1.5em;
+		margin-top:-0.5px;
 		font-size:10px;
+	}
+
+	#footer-1 div {
+   display: flex;
+   flex-wrap: wrap;
+	 max-width: 35em;
+	}
+	#footer-1 .mauticform-row{
+	  margin-right: 1em;
 	}
