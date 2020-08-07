@@ -1306,3 +1306,19 @@ text-decoration: none;}
 	#footer-1 .mauticform-row{
 	  margin-right: 1em;
 	}
+
+	#footer-2 .menu{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 35em;
+	}
+
+	#footer-2 .menu-item{
+		font-weight: bold;
+		margin-right: 1em;
+	}
+
+	#footer-2 .sub-menu{
+		font-weight: normal;
+		display: flex;	
+	}
