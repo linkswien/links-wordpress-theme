@@ -1325,7 +1325,21 @@ text-decoration: none;}
 		font-size:10px;
 	}
 
-	#footer-1 div {
+	#footer-1 .textwidget {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#footer-1 .headline-container {
+		flex: 1;
+		margin: 1rem;
+	}
+
+	#footer-2 .mauticform_wrapper {
+		flex: 2;
+	}
+
+	#footer-1 .mauticform_wrapper div {
    display: flex;
    flex-wrap: wrap;
 	 max-width: 35em;
