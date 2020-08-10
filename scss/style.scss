@@ -53,6 +53,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 $orange: #FA7F16;
 $violet: #5e219e;
 $violetDark: #43187E;
+$grey: #f5f5f5;
 $white: #fff;
 
 // Gutenberg color options
@@ -819,6 +820,13 @@ main a:hover, a:active {
 .entry-content > .wp-block-group.wider > .wp-block-group__inner-container,
 .entry-content > #em-wrapper > .wp-block-group.wider > .wp-block-group__inner-container {
 	max-width: 70rem;
+}
+
+.programmpunkt > .wp-block-group__inner-container {
+	background-color: $grey;
+}
+.programmpunkt .ausklappen {
+	display: none;
 }
 
 .padded-box {
