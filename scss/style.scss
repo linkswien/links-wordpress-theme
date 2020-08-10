@@ -1313,7 +1313,12 @@ text-decoration: none;}
 --------------------------------------------------------------*/
 	.mauticform-row{
 		margin-top: 1em;
-		width: 220px;
+		max-width: 25rem;
+		width: 100%;
+	}
+
+	.mauticform-input, .mauticform-selectbox {
+		width: 100%;
 	}
 
 	.mauticform-selectbox{
