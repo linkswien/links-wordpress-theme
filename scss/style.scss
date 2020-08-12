@@ -1391,6 +1391,7 @@ text-decoration: none;}
 		border: 1px solid #000;
 		width: 320px;
 		margin-right: 2em;
+		margin-bottom: 2em;
 	}
 
 	.events-table .event-text{
@@ -1412,7 +1413,7 @@ text-decoration: none;}
 		transition: none;
 		color: #000;
 	}
-  .events-table .events-location{
+  .events-table .event-location{
 		color: #FA7F16;
 		font-weight: bold;
 	}
