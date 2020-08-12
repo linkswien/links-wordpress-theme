@@ -1377,3 +1377,42 @@ text-decoration: none;}
 		font-weight: normal;
 		display: flex;
 	}
+
+	/*--------------------------------------------------------------
+	## Events manager
+	--------------------------------------------------------------*/
+
+	.events-table{
+		display:flex;
+		flex-wrap: wrap;
+	}
+
+	.events-table .event{
+		border: 1px solid #000;
+		width: 320px;
+		margin-right: 2em;
+	}
+
+	.events-table .event-text{
+		margin-left: 0.5em;
+	}
+
+	.events-table .event-dates{
+		opacity: 0.7;
+	}
+
+	.events-table .event-link{
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 42px;
+	}
+
+	.events-table .event-link a{
+		text-decoration: none;
+		transition: none;
+		color: #000;
+	}
+  .events-table .events-location{
+		color: #FA7F16;
+		font-weight: bold;
+	}
