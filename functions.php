@@ -196,4 +196,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Activate shortcuts in footers.
  */
 add_filter('widget_text', 'shortcode_unautop');
-add_filter(‚widget_text‘, ‚do_shortcode‘);
+add_filter('widget_text', 'do_shortcode');
