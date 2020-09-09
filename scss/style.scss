@@ -1371,7 +1371,6 @@ a:active {
 .mauticform-freehtml {
 	margin-top: -0.5px;
 	font-size: 10px;
-	display: block;
 }
 
 #footer-1 .textwidget {
@@ -1388,7 +1387,7 @@ a:active {
 	flex: 2;
 }
 
-#footer-1 .mauticform_wrapper div {
+#footer-1 .mauticform_wrapper > div {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 35em;
