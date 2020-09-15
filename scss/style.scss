@@ -849,6 +849,19 @@ a:active {
 	max-width: 70rem;
 }
 
+.entry-content > .wp-block-cover > .wp-block-cover__inner-container {
+	background-color: $violet;
+	margin: 4rem 4rem 4rem 30rem;
+	max-width: 30rem;
+}
+
+@media screen and (max-width: 60em) {
+	.entry-content > .wp-block-cover > .wp-block-cover__inner-container {
+		margin: 1rem;
+	}
+}
+
+
 .programmpunkt {
 	margin-bottom: 1rem;
 }
