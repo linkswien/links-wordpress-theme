@@ -130,7 +130,7 @@ $white: #fff;
 
 #page input:not([type="submit"]):focus,
 #footer-1 input:not([type="submit"]):focus,
-#text textarea {
+#page textarea:focus {
 	border: 1px solid $orange;
 }
 
