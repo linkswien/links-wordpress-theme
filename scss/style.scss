@@ -80,6 +80,12 @@ $white: #fff;
 	background-color: $violetDark;
 }
 
+.has-orange-background-color a,
+.has-violet-background-color a,
+.has-violet-dark-background-color a {
+	color: $white;
+}
+
 .has-white-color {
 	color: $white;
 }
@@ -856,6 +862,9 @@ a:active {
 .spenden {
 	padding: 0.1rem 0;
 	text-align: center;
+}
+.spenden:hover {
+	background-color: $orange;
 }
 
 /*--------------------------------------------------------------
