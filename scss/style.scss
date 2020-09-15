@@ -1453,12 +1453,13 @@ a:active {
 .events-table {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .events-table .event {
 	border: 1px solid #000;
-	width: 320px;
-	margin-right: 2em;
+	max-width: 380px;
+	flex: 1 1 30%;
 	margin-bottom: 2em;
 }
 
