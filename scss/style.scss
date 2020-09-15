@@ -855,6 +855,10 @@ a:active {
 	max-width: 30rem;
 }
 
+.entry-content > .wp-block-cover > .wp-block-cover__inner-container a {
+	color: $white;
+}
+
 @media screen and (max-width: 60em) {
 	.entry-content > .wp-block-cover > .wp-block-cover__inner-container {
 		margin: 1rem;
@@ -881,6 +885,7 @@ a:active {
 
 .spenden {
 	padding: 0.1rem 0;
+	margin: 0.5rem 0;
 	text-align: center;
 }
 .spenden:hover {
