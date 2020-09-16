@@ -18,6 +18,14 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name="description" content="Am 11. Oktober endlich LINKS wählen! Denn nur gemeinsam können wir es schaffen, dass Wien eine Stadt für alle wird – nicht nur für die, die sich’s leisten können." />
+	<meta name="keywords" content="LINKS, Wien, Partei, Politik, Arbeit, Wohnen, Wahlrecht, Gemeinderat, Rathaus, Bezirk, Bezirke, Bezirksrat, Innere Stadt, Leopoldstadt, Landstraße, Wieden, Margareten, Mariahilf, Neubau, Josefstadt, Alsergrund, Favoriten, Simmering, Meidling, Hietzing, Penzing, Rudolfsheim-Fünfhaus, Ottakring, Hernals, Währing, Döbling, Brigittenau, Floridsdorf, Donaustadt, Liesing" />
+	<meta property="og:url" content="https://links-wien.at" />
+	<meta property="og:description" content="Am 11. Oktober endlich LINKS wählen! Denn nur gemeinsam können wir es schaffen, dass Wien eine Stadt für alle wird – nicht nur für die, die sich’s leisten können." />
+	<meta property="og:image" content="https://links-wien.at/wp-content/themes/links-wien-theme/img/og_banner_spikas.jpg" />
+	<meta property="og:image:url"  content="https://links-wien.at/wp-content/themes/links-wien-theme/img/og_banner_spikas.jpg" />
+	<meta property="twitter:image" content="https://links-wien.at/wp-content/themes/links-wien-theme/img/og_banner_spikas.jpg" />
+	<meta name="twitter:card" content="summary_large_image">
 
 	<?php wp_head(); ?>
 </head>
