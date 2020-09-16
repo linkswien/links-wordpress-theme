@@ -863,6 +863,10 @@ a:active {
 	margin: 4rem 4rem 4rem 30rem;
 	max-width: 30rem;
 }
+.entry-content > .wp-block-cover.box-right > .wp-block-cover__inner-container {
+	margin: 4rem;
+	align-self: end;
+}
 
 .entry-content > .wp-block-cover > .wp-block-cover__inner-container a {
 	color: $white;
@@ -871,6 +875,10 @@ a:active {
 @media screen and (max-width: 60em) {
 	.entry-content > .wp-block-cover > .wp-block-cover__inner-container {
 		margin: 1rem;
+	}
+	.entry-content > .wp-block-cover.box-right > .wp-block-cover__inner-container {
+		margin: 1rem;
+		align-self: auto;
 	}
 }
 
