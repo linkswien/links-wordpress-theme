@@ -851,6 +851,12 @@ a:active {
 .entry-content > #em-wrapper > .wp-block-cover.wider > .wp-block-cover__inner-container {
 	max-width: 90rem;
 }
+.entry-content > .wp-block-group.narrower > .wp-block-group__inner-container,
+.entry-content > #em-wrapper > .wp-block-group.narrower > .wp-block-group__inner-container,
+.entry-content > .wp-block-cover.narrower > .wp-block-cover__inner-container,
+.entry-content > #em-wrapper > .wp-block-cover.narrower > .wp-block-cover__inner-container {
+	max-width: 50rem;
+}
 
 .entry-content > .wp-block-cover > .wp-block-cover__inner-container {
 	background-color: $violet;
