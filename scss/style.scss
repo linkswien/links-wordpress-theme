@@ -882,6 +882,11 @@ a:active {
 	}
 }
 
+@media (max-width: 599px) {
+  .kandidatinnen-details .wp-block-columns:nth-of-type(2n) .wp-block-column:nth-child(2) {
+    order: -1;
+  }
+}
 
 .programmpunkt {
 	margin-bottom: 1rem;
