@@ -821,6 +821,13 @@ a:active {
 	outline: 0;
 }
 
+.ek-linked-block {
+	transition: transform 0.2s;
+}
+.ek-linked-block:hover {
+	transform: scale(1.02);
+}
+
 .entry-content > .wp-block-group,
 .entry-content > #em-wrapper > .wp-block-group,
 .entry-content > .wp-block-cover,
