@@ -1413,6 +1413,12 @@ a:active {
 	margin: 1rem;
 }
 
+@media (max-width: 599px) {
+	#footer-1 .headline-container {
+		flex-basis: 100%;
+	}
+}
+
 #footer-1 .mauticform_wrapper {
 	flex: 2;
 }
