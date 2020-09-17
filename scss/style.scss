@@ -566,7 +566,12 @@ table {
 	z-index: 1;
 }
 
-#tertiary-menu li:hover ul,
+@media (hover :hover) {
+	#tertiary-menu li:hover ul {
+		display: block;
+	}
+}
+
 #tertiary-menu .toggled ul {
 	display: block;
 }
@@ -730,9 +735,11 @@ table {
 		z-index: 99999;
 	}
 
-	.main-navigation ul li:hover > ul,
-	.main-navigation ul li.focus > ul {
-		display: block;
+	@media(hover: hover) {
+		.main-navigation ul li:hover > ul,
+		.main-navigation ul li.focus > ul {
+			display: block;
+		}
 	}
 }
 
