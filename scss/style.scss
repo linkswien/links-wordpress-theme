@@ -1472,7 +1472,7 @@ a:active {
 	border-collapse: collapse;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
 
 	thead {
@@ -1511,6 +1511,7 @@ a:active {
 	
 	.event-dates {
 		opacity: 0.7;
+		white-space: nowrap;
 	}
 	
 	.event-link {
