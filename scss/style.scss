@@ -1473,6 +1473,7 @@ a:active {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: flex-start;
 
 	thead {
 		margin-bottom: 0.5em;
@@ -1501,7 +1502,7 @@ a:active {
 		border: 1px solid #000;
 		max-width: 380px;
 		flex: 1 1 30%;
-		margin-bottom: 2em;
+		margin: 1rem;
 	}
 	
 	.event-text {
