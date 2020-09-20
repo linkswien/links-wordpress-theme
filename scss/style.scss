@@ -630,14 +630,14 @@ table {
 .main-navigation ul ul {
 	display: none;
 }
+.main-navigation ul ul li {
+	width: 100%;
+}
 
 .main-navigation .toggled ul {
 	display: block;
 	background-color: #ddd;
 	padding-left: 1.5em;
-}
-.main-navigation .toggled ul li {
-	width: 100%;
 }
 
 .main-navigation a {
