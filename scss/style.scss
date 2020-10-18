@@ -407,24 +407,29 @@ i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: .5em 1em;
 	position: relative;
-	font-size: 125%;
-}
-blockquote p:first-child:before {
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
-}
-blockquote p:first-child {
-	margin-left: 0;
-}
-blockquote p {
-	font-style: italic;
-	font-weight: bold;
-	margin-left: 3em;
+	&:before {
+		font-family: serif;
+		content: '\201C';
+		position: absolute;
+		top: -2.1rem;
+		left: 0.38rem;
+		color: darken($white, 7%);
+		font-size: 5em;
+		z-index: -1;
+	 }
+	 p {
+		font-size: 125%;
+		font-weight: bold;
+		margin-left: 2rem;
+		font-style: italic;
+	 }
+	 cite {
+		display: block;
+		margin-top: -.8rem;
+		margin-left: 2rem;
+	 }
 }
 
 address {
