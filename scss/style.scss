@@ -779,40 +779,6 @@ table {
 # Content
 --------------------------------------------------------------*/
 
-main .has-post-thumbnail header {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	max-height: 20em;
-	overflow: hidden;
-	margin-left: -2rem;
-	margin-right: -2rem;
-}
-
-main .has-post-thumbnail header h1 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 90%;
-	text-align: center;
-	font-size: 2.5em;
-	color: #fff;
-	text-shadow: 0 0 6px #000000;
-}
-
-main .has-post-thumbnail header img {
-	object-fit: cover;
-}
-
-@media screen and (min-width: 70em) {
-	main .has-post-thumbnail header {
-		margin-left: calc(-50vw + 33rem);
-		margin-right: calc(-50vw + 33rem);
-	}
-}
-
 main a {
 	color: $violetDark;
 	transition: color 0.2s ease-in-out;
@@ -840,6 +806,12 @@ a:active {
 	transform: scale(1.02);
 }
 
+.entry-header {
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 0 2em;
+}
+
 .entry-content > .wp-block-group,
 .entry-content > #em-wrapper > .wp-block-group,
 .entry-content > .wp-block-cover,
@@ -856,7 +828,7 @@ a:active {
 	flex: 0;
 	width: 100%;
 	max-width: 70rem;
-	padding: 2em;
+	padding: 1em 2em;
 }
 .entry-content > .wp-block-group.taller,
 .entry-content > #em-wrapper > .wp-block-group.taller,
