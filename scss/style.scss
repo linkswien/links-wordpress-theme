@@ -806,7 +806,9 @@ a:active {
 	transform: scale(1.02);
 }
 
-.entry-header {
+.page-header,
+.entry-header,
+.entry-footer {
 	max-width: 70rem;
 	margin: 0 auto;
 	padding: 0 2em;
@@ -938,13 +940,15 @@ footer .widget_nav_menu li {
 	display: block;
 }
 
-footer a {
-	color: #fff;
-	text-decoration: none;
-}
-
-footer a:hover {
-	text-decoration: underline;
+#footer-2,
+#footer-1 {
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
 footer ul,
