@@ -807,7 +807,7 @@ a:active {
 }
 
 .post,
-.event,
+main > .event,
 .page > .entry-footer,
 .comments-area,
 .error-404 {
@@ -1480,31 +1480,36 @@ a:active {
 	}
 
 	.event {
-		border: 1px solid #000;
+		border: 1px solid #ccc;
+		border-radius: 0.5rem;
 		max-width: 380px;
 		flex: 1 1 30%;
 		margin: 1rem;
+		text-decoration: none;
+		transition: transform 0.2s;
+		color: #000;
 	}
-	
+	.event:hover {
+		transform: scale(1.02);
+	}
+
+	.event-thumbnail {
+		min-height: 0.5rem;
+	}
+
 	.event-text {
 		margin: 0 .5em .5em .5em;
 	}
-	
+
 	.event-dates {
 		opacity: 0.7;
 		white-space: nowrap;
 	}
-	
+
 	.event-link {
 		font-weight: bold;
 		font-size: 1.5rem;
 		line-height: 1.25;
-	}
-	
-	.event a {
-		text-decoration: none;
-		transition: none;
-		color: #000;
 	}
 
 	.event-location {
