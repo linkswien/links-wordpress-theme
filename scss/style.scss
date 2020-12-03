@@ -786,7 +786,7 @@ table {
 	float: left;
 	width: 50%;
 
-	&:before {
+	a:before {
 		content: "";
 		position: relative;
 		top: .1rem;
@@ -806,7 +806,7 @@ table {
 	text-align: right;
 	width: 50%;
 
-	&:after {
+	a:after {
 		content: "";
 		position: relative;
 		top: .1rem;
