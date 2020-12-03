@@ -806,14 +806,26 @@ a:active {
 	transform: scale(1.02);
 }
 
-.page-header,
 .post,
-.event > .entry-content,
-.comments-area {
-	max-width: 70rem;
+.event,
+.page > .entry-footer,
+.comments-area,
+.error-404 {
+	max-width: 50rem;
 	margin: 0 auto;
 	padding: 2rem;
 }
+
+.entry-meta {
+	display: inline-block;
+	background: #ccc;
+	font-size: 0.8rem;
+	padding: 0.2rem 0.5rem;
+	margin: 0 0rem;
+	border-radius: 1rem;
+}
+
+
 
 .entry-content > .wp-block-group,
 .entry-content > #em-wrapper > .wp-block-group,
@@ -1325,17 +1337,6 @@ a:active {
 		&:focus,
 		&:active {
 			text-decoration: underline;
-		}
-	}
-	.entry-meta,
-	.entry-meta a {
-		color: #777;
-	}
-	.entry-meta a {
-		&:hover,
-		&:focus,
-		&:active {
-			color: $orange;
 		}
 	}
 	.post-thumbnail {
