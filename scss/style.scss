@@ -362,6 +362,20 @@ h6 {
 	word-wrap: break-word;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+	}
+}
+
 h2 {
 	font-size: 2rem;
 }
@@ -1405,12 +1419,6 @@ a:active {
 	}
 	h2 a {
 		color: $violet;
-		text-decoration: none;
-		&:hover,
-		&:focus,
-		&:active {
-			text-decoration: underline;
-		}
 	}
 	.post-thumbnail {
 		float: right;
