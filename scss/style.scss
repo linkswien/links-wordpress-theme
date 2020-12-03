@@ -807,11 +807,12 @@ a:active {
 }
 
 .page-header,
-.entry-header,
-.entry-footer {
+.post,
+.event > .entry-content,
+.comments-area {
 	max-width: 70rem;
 	margin: 0 auto;
-	padding: 0 2em;
+	padding: 2rem;
 }
 
 .entry-content > .wp-block-group,
@@ -1517,8 +1518,6 @@ a:active {
 }
 
 .event-page {
-	margin-left: 100px;
-
 	.event-dates {
 		opacity: 0.7;
 	}
