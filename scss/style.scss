@@ -756,8 +756,28 @@ table {
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
+	margin: 0;
 	overflow: hidden;
+}
+
+.comment-navigation .nav-links > *,
+.posts-navigation .nav-links > *,
+.post-navigation .nav-links > * {
+	background-color: #eee;
+	display: flex;
+
+	a {
+		flex: 1;
+		padding: 2rem;
+		transition: background-color .2s, transform .2s;
+		color: $orange;
+		text-decoration: none;
+
+		&:hover {
+			background-color: #ddd;
+			transform: scale(1.02);
+		}
+	}
 }
 
 .comment-navigation .nav-previous,
@@ -765,6 +785,18 @@ table {
 .post-navigation .nav-previous {
 	float: left;
 	width: 50%;
+
+	&:before {
+		content: "";
+		position: relative;
+		top: .1rem;
+		right: .4rem;
+		border: solid #fa7f16;
+		border-width: 0.2rem .0rem 0.0rem 0.2rem;
+		display: inline-block;
+		padding: .4rem;
+		transform: rotate(-45deg);
+	}
 }
 
 .comment-navigation .nav-next,
@@ -773,6 +805,18 @@ table {
 	float: right;
 	text-align: right;
 	width: 50%;
+
+	&:after {
+		content: "";
+		position: relative;
+		top: .1rem;
+		left: .4rem;
+		border: solid #fa7f16;
+		border-width: 0 .2rem .2rem 0;
+		display: inline-block;
+		padding: .4rem;
+		transform: rotate(-45deg);
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1514,14 +1558,15 @@ a:active {
 		text-decoration: none;
 		transition: transform 0.2s;
 		color: #000;
-	}
-	.event:hover {
-		transform: scale(1.02);
+		overflow: hidden;
+
+		&:hover {
+			transform: scale(1.02);
+		}
 	}
 
 	.event-thumbnail {
 		min-height: 0.5rem;
-		overflow: hidden;
 	}
 
 	.event-text {
@@ -1560,13 +1605,9 @@ a:active {
 		font-size: 1.5rem;
 		line-height: 1.25;
 	}
-	
+
 	.event-location {
 		color: #fa7f16;
 		font-weight: bold;
 	}
-}
-
-.nav-links {
-	margin-left: 1em;
 }
