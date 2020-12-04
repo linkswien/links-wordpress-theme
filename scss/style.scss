@@ -1628,12 +1628,16 @@ a:active {
 		.event-title {
 			font-weight: bold;
 			font-size: 1.5rem;
-			line-height: 1.25;
+			line-height: 1.5;
 		}
 
 		.event-location {
 			color: #fa7f16;
 			font-weight: bold;
+		}
+
+		.event-text {
+			margin-top: 1rem;
 		}
 	}
 }
