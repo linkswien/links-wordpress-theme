@@ -1637,6 +1637,10 @@ a:active {
 		}
 		.event-address {
 			font-size: 0.9rem;
+
+			.event-address-address:empty + .event-address-comma {
+				display: none;
+			}
 		}
 
 		.event-text {
