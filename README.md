@@ -16,4 +16,5 @@ Checkout this repository into the `wp-content/themes` folder of the Wordpress in
 
 ## Continuous Integration
 
-Pushing to `master` automatically deploys the theme to [wienwp.fnordserver.dev](https://wienwp.fnordserver.dev/)
+Pushing to `develop` automatically deploys the theme to [wienwp.fnordserver.dev](https://wienwp.fnordserver.dev/)
+Pushing to `main` automatically deploys the theme to [links-wien.at](https://links-wien.at/)
