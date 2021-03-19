@@ -49,9 +49,15 @@ Add a row to the `wp_usermeta` table:
 
 Now copy the contents of the public_html folder of the wordpress-installation provided to you by a LINKS administrator to the public_html folder of your wordpress installation. Overwrite everything.
 
+Go to the plugins folder and delete the daggerhart-openid-connect and oidc-keykloak-sso plugins.
+Go to the themes folder and delete the links-wien-theme folder. Checkout this repository in the themes folder.
+
 Open the wp-config.php file in the public_html folder and replace the lines DB_NAME, DB_USER and DB_PASSWORD with the following:
+
 `define( 'DB_NAME', 'wordpress-one' );`
+
 `define( 'DB_USER', 'wp' );`
+
 `define( 'DB_PASSWORD', 'wp' );`
 
 Now you can log in to `http://one.wordpress.test/wp-admin`!
@@ -60,7 +66,7 @@ Go to Appearance -> Themes and activate the Links Wien Theme
 
 If you go to `http://one.wordpress.test` you should see the links site!
 
-Activate the following plugins:
+If necessary activate the following plugins:
   * EditorsKit
   * Events Manager
   * Lingotek Translation
