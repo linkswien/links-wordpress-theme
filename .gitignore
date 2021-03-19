@@ -6,3 +6,6 @@
 *.scss.map
 
 /style.css
+
+#IntelliJ
+.idea
