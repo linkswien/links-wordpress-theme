@@ -13,8 +13,9 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
-
+		<?php if ( have_posts() ) :
+            echo get_bezirksseiten_header(get_the_category());
+            ?>
 			<header class="page-header">
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
