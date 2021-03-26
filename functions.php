@@ -195,6 +195,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /**
+ * Load function to display bezirkssite header
+ */
+require __DIR__ . '/inc/bezirkssite-header.php';
+
+/**
  * Activate shortcuts in footers.
  */
 add_filter('widget_text', 'shortcode_unautop');
