@@ -161,7 +161,9 @@ function links_wien_theme_scripts() {
 
 	wp_enqueue_script( 'links-wien-theme-form-hidden-bezirk', get_template_directory_uri() . '/js/form-hidden-bezirk.js', array(), '20151215', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+    wp_enqueue_script( 'links-wien-theme-bezirkssite-hide-empty-events', get_template_directory_uri() . '/js/bezirkssite-hide-empty-events.js', array(), '20151215', true );
+
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
