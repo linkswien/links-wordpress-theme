@@ -3,9 +3,9 @@
  */
 
 (function () {
-    const events_table = document.querySelector('.bg-events-container');
-    if (events_table.childElementCount === 0) {
-        events_table.closest('.wp-block-group').classList.add('bg-events-hidden');
+    const events_container = document.querySelector('.bg-events-container');
+    if (events_container != null && events_container.childElementCount === 0) {
+        events_container.closest('.wp-block-group').classList.add('bg-events-hidden');
     }
 
 })();
