@@ -1620,7 +1620,7 @@ a:active {
 
 	.event-info {
 		padding: 1rem;
-		
+
 		.event-dates {
 			color: #777;
 		}
@@ -1647,4 +1647,29 @@ a:active {
 			margin-top: 1rem;
 		}
 	}
+}
+
+/*--------------------------------------------------------------
+	## Bezirksgruppen-Sites
+--------------------------------------------------------------*/
+
+.slick-arrow {
+  width: 30px !important; // Set correct size of arrow in article-carousel-plugin (overwrite full width)
+}
+
+.wppsac-post-slider-init {
+  margin-left: -10px; // Compensate for padding-left of article-carousel entry padding
+}
+
+.bg-events-container .events-table {
+    justify-content: left;
+    margin-left: -1rem;
+}
+
+.slick-dots button {
+  border: 1px solid black !important; // Override button style for article-carousel indicator
+}
+
+.bg-events-hidden {
+  display: none !important;
 }

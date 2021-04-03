@@ -15,6 +15,9 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
+		    echo get_bezirksseiten_header(get_the_category());
+			?>
+		<?php
 			the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
