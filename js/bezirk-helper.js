@@ -36,11 +36,13 @@
     // find hidden Bezirk field
     var bezirk_hidden_field = document.querySelector('#mauticform_input_newslettermitname_bezirk')
 
-    bezirke.forEach(function (bezirk) {
-        if (String(window.location).toLowerCase().indexOf(bezirk.name) > -1) {
-            bezirk_hidden_field.value = bezirk.plz
-        }
-    });
+    if (bezirk_hidden_field != null) {
+        bezirke.forEach(function (bezirk) {
+            if (String(window.location).toLowerCase().indexOf(bezirk.name) > -1) {
+                bezirk_hidden_field.value = bezirk.plz
+            }
+        });
+    }
 
     // Hide events block on bezirkssites if no events exist
     const events_container = document.querySelector('.bg-events-container');
