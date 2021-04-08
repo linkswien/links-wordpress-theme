@@ -1670,6 +1670,10 @@ a:active {
   border: 1px solid black !important; // Override button style for article-carousel indicator
 }
 
+.wppsac-post-categories ul.wppsac-post-categories-list li a {
+  background-color: #5E219F !important;
+}
+
 .bg-events-hidden {
   display: none !important;
 }
