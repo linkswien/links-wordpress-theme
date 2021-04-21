@@ -204,8 +204,17 @@ function insert_og_in_head() {
 		return;
 	}
 
-	if($post->post_content) {
-		$excerpt = substr(strip_tags($post->post_content),0,200) . '...';
+	if(get_the_excerpt()) {
+		$excerpt = get_the_excerpt();
+	} elseif($post->post_content) {
+		$excerpt = trim(substr(preg_replace([
+			"/<h([1-6]{1})>.*?<\/h\\1>/si", // replace headlines with ''
+			"/\[.*?\]/si", // replace shortcodes with ''
+			'/<(?:br|p)[^>]*>/i', //replace br p with ' '
+			'/<[^>]*>/',  //replace any tag with ''
+			'/\s+/', //remove run on space
+			'/^\s+|\s+$/' //trim
+		], ['', '', ' ', '', ' ', ''], $post->post_content),0,180)) . '…';
 	} else {
 		$excerpt = get_bloginfo('description');
 	}
