@@ -197,15 +197,14 @@ function insert_og_in_head() {
 		return;
 	}
 
-	if($excerpt = $post->post_excerpt) {
-		$excerpt = strip_tags($post->post_excerpt);
-		$excerpt = str_replace("", "'", $excerpt);
+	if($post->post_content) {
+		$excerpt = substr(strip_tags($post->post_content),0,200) . '...';
 	} else {
 		$excerpt = get_bloginfo('description');
 	}
 	echo '<meta name="description" content="' . $excerpt . '" />';
 	echo '<meta property="og:description" content="' . $excerpt . '" />';
-  echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+  echo '<meta property="og:title" content="' . get_the_title() . ' – ' . get_bloginfo('name') . '"/>';
   echo '<meta property="og:url" content="' . get_permalink() . '"/>';
 }
 add_action( 'wp_head', 'insert_og_in_head', 5 );
