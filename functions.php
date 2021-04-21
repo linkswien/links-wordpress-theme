@@ -192,7 +192,7 @@ function insert_og_in_head() {
 
 	// Fallback to theme banner
 	if (!$image) {
-		$image = get_template_directory_uri() . '/img/og_banner_spikas.jpg';
+		$image = get_template_directory_uri() . '/img/og_logo_links.png';
 	}
 
 	echo '<meta property="og:image" content="' . $image . '"/>';
