@@ -15,9 +15,12 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
-		    echo get_bezirksseiten_header(get_the_category());
-			?>
-		<?php
+			if ( has_post_thumbnail( $post->ID ) ) {
+				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+				echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
+			} else {
+				echo get_bezirksseiten_header(get_the_category());
+			}
 			the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
