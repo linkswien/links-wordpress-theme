@@ -168,49 +168,6 @@ function links_wien_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'links_wien_theme_scripts' );
 
 /**
- * Add Open Graph Language Attribute
- */
-function add_opengraph_doctype( $output ) {
-        return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
-    }
-add_filter('language_attributes', 'add_opengraph_doctype');
-
-/**
- * Add Open Graph Tags
- */
-function insert_og_in_head() {
-  global $post;
-
-	echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '"/>';
-
-	if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-		$og_image_src = get_template_directory_uri() . '/img/og_banner_spikas.jpg';
-	}	else {
-		$og_image_src = esc_attr( wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0] );
-	}
-	echo '<meta property="og:image" content="' . $og_image_src . '"/>';
-	echo '<meta property="og:image:url"  content="' . $og_image_src . '" />';
-	echo '<meta property="twitter:image"  content="' . $og_image_src . '" />';
-	echo '<meta name="twitter:card" content="summary_large_image">';
-
-	if ( !is_singular() ) { //if it is not a post or a page, return no more OG tags
-		return;
-	}
-
-	if($excerpt = $post->post_excerpt) {
-		$excerpt = strip_tags($post->post_excerpt);
-		$excerpt = str_replace("", "'", $excerpt);
-	} else {
-		$excerpt = get_bloginfo('description');
-	}
-	echo '<meta name="description" content="' . $excerpt . '" />';
-	echo '<meta property="og:description" content="' . $excerpt . '" />';
-  echo '<meta property="og:title" content="' . get_the_title() . '"/>';
-  echo '<meta property="og:url" content="' . get_permalink() . '"/>';
-}
-add_action( 'wp_head', 'insert_og_in_head', 5 );
-
-/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
