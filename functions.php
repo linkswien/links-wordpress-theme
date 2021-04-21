@@ -183,14 +183,21 @@ function insert_og_in_head() {
 
 	echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '"/>';
 
-	if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-		$og_image_src = get_template_directory_uri() . '/img/og_banner_spikas.jpg';
-	}	else {
-		$og_image_src = esc_attr( wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0] );
+	// Try getting post or category header picture
+	if ( has_post_thumbnail( $post->ID ) ) {
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
+	} else {
+		$image = get_bezirksseiten_header_image(get_the_category());
 	}
-	echo '<meta property="og:image" content="' . $og_image_src . '"/>';
-	echo '<meta property="og:image:url"  content="' . $og_image_src . '" />';
-	echo '<meta property="twitter:image"  content="' . $og_image_src . '" />';
+
+	// Fallback to theme banner
+	if (!$image) {
+		$image = get_template_directory_uri() . '/img/og_banner_spikas.jpg';
+	}
+
+	echo '<meta property="og:image" content="' . $image . '"/>';
+	echo '<meta property="og:image:url"  content="' . $image . '" />';
+	echo '<meta property="twitter:image"  content="' . $image . '" />';
 	echo '<meta name="twitter:card" content="summary_large_image">';
 
 	if ( !is_singular() ) { //if it is not a post or a page, return no more OG tags

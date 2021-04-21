@@ -13,9 +13,14 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) :
-            echo get_bezirksseiten_header(get_the_category());
-            ?>
+			<?php if ( have_posts() ) :
+				if ( has_post_thumbnail( $post->ID ) ) {
+					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
+				} else {
+					$image = get_bezirksseiten_header_image(get_the_category());
+				}
+				echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
+	    ?>
 			<header class="page-header">
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
