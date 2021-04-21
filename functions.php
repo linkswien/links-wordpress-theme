@@ -185,7 +185,7 @@ function insert_og_in_head() {
 
 	// Try getting post or category header picture
 	if ( has_post_thumbnail( $post->ID ) ) {
-		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0];
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 	} else {
 		$image = get_bezirksseiten_header_image(get_the_category());
 	}
