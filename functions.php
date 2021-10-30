@@ -129,15 +129,6 @@ add_action( 'after_setup_theme', 'links_wien_theme_content_width', 0 );
  */
 function links_wien_theme_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer 1', 'links-wien-theme' ),
-		'id'            => 'footer-1',
-		'description'   => esc_html__( 'Add widgets here.', 'links-wien-theme' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
 		'name'          => esc_html__( 'Footer 2', 'links-wien-theme' ),
 		'id'            => 'footer-2',
 		'description'   => esc_html__( 'Add widgets here.', 'links-wien-theme' ),

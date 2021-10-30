@@ -10,6 +10,3 @@
 ?>
 </div><!-- #content -->
 
-<footer id="footer-1" class="widget-area">
-	<?php dynamic_sidebar( 'footer-1' ); ?>
-</footer><!-- #secondary -->
