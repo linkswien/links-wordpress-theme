@@ -11,9 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-		the_title( '<h1 class="entry-title">', '</h1>' );
-		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -21,6 +18,7 @@
 			<div class="wp-block-column" style="flex-basis:33.33%">
 				<figure class="wp-block-image size-large">
 					<?php
+						the_title( '<h1 class="entry-title">', '</h1>' );
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 						echo '<img loading="lazy" src="' . $image . '" alt="Portrait" class="wp-image-1826">';
 					?>
