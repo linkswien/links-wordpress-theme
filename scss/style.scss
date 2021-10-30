@@ -135,14 +135,15 @@ $white: #fff;
 #page input:not([type="submit"],[type='checkbox']):focus,
 #footer-1 input:not([type="submit"],[type='checkbox']):focus,
 #page textarea:focus {
-	border: 1px solid $orange;
+	border: 1px solid $orange !important;
+	background-color: #fff !important;
 }
 
 #page input:not([type="submit"],[type='checkbox']):hover,
 #footer-1 input:not([type="submit"],[type='checkbox']):hover,
 #page textarea:hover {
-	border: 1px solid rgba(255,255,255,0.2);
-	background-color: rgba(255,255,255,0.2);
+	border: 1px solid rgba(255,255,255,0.2) !important;
+	background-color: rgba(255,255,255,0.2) !important;
 }
 
 /**
