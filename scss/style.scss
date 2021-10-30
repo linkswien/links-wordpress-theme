@@ -119,18 +119,21 @@ $white: #fff;
 	cursor: pointer;
 }
 
-#page input:not([type="submit"]),
+#page input:not([type="submit"],[type='checkbox']),
 #page textarea,
 #page select {
 	height: 38px;
 	border-radius: 4px;
-	border: none;
+	border: 1px solid rgba(255,255,255,0.1);
 	outline: none;
 	padding: 6px 10px;
+	background-color: rgba(255,255,255,0.1);
+	color: #fff;
+	transition: background-color 0.3s,border 0.3s;
 }
 
-#page input:not([type="submit"]):focus,
-#footer-1 input:not([type="submit"]):focus,
+#page input:not([type="submit"],[type='checkbox']):focus,
+#footer-1 input:not([type="submit"],[type='checkbox']):focus,
 #page textarea:focus {
 	border: 1px solid $orange;
 }
