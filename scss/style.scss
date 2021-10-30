@@ -131,6 +131,16 @@ $white: #fff;
 	transition: background-color 0.3s,border 0.3s;
 }
 
+#page input:not([type="submit"],[type='checkbox'])::placeholder,
+#page textarea::placeholder {
+	color: rgba(255,255,255,0.7);
+}
+
+#page input:not([type="submit"],[type='checkbox']):focus::placeholder,
+#page textarea:focus::placeholder {
+	color: rgba(0,0,0,0.5);
+}
+
 #page input:not([type="submit"],[type='checkbox']):focus,
 #footer-1 input:not([type="submit"],[type='checkbox']):focus,
 #page textarea:focus {
@@ -144,6 +154,12 @@ $white: #fff;
 #page textarea:hover {
 	border: 1px solid rgba(255,255,255,0.2);
 	background-color: rgba(255,255,255,0.2);
+}
+
+#page option,
+#footer option {
+	color: #000;
+    background: #fff;
 }
 
 /**
@@ -1431,7 +1447,7 @@ object {
 	flex: 2;
 }
 
-.mauticform-innerform {
+#footer-1 .mauticform-innerform {
 	margin: calc(2rem - 10px) 1rem;
 }
 
@@ -1440,7 +1456,7 @@ object {
 	font-size: 0.7rem;
 }
 
-.mauticform-field-container {
+.mauticform-field-container, .mauticform-row {
 	display: flex;
 	flex-direction: column;
 	margin: 10px 0;
@@ -1459,6 +1475,7 @@ object {
 }
 .mauticform-radio-container, .mauticform-checkbox-container {
 	margin: 3px;
+	padding: 5px 0;
 	flex: 1 auto;
 	background-color: rgba(255,255,255,0.2);
 	border-radius: 4px;

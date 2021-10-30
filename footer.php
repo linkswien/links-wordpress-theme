@@ -95,7 +95,7 @@
 									<p>Bildung</p>
 								</label>
 								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2">
-									<input value="ig-flint" type="checkbox" name="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2" id="interest-flinta">
+									<input value="ig-flint" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2" name="interest-flinta">
 									<p>FLINTA <small>Frauen, Lesben, Inter, Trans, Agender</small></p>
 								</label>
 								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iggewerkschaft3">
@@ -110,9 +110,9 @@
 									<input value="ig-kultur" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igkultur5" name="interest-kultur">
 									<p>Kunst &amp; Kultur</p>
 								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6">
+								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6">
 									<input value="ig-lgbtqia" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6" name="interest-lgbtqia">
-									<p>Queeres</p>
+									<p>LGBTQIA+</p>
 								</label>
 								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igmarxismus7">
 									<input value="ig-marxismus" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igmarxismus7" name="interest-marxismus">
