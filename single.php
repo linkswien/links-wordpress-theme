@@ -15,12 +15,21 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
-			if ( has_post_thumbnail( $post->ID ) ) {
+			$categories = get_the_category();
+			$has_thumbnail = has_post_thumbnail( $post->ID );
+			
+			if ( $has_thumbnail ) {
 				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 			} else {
-				$image = get_bezirksseiten_header_image(get_the_category());
+				$image = get_bezirksseiten_header_image( $categories );
 			}
-			echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
+
+			if ( has_menschen_von_links($categories) && $has_thumbnail ) {
+				echo '<img src=' . $image . ' alt="Portrait">';
+			}
+			else {
+				echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
+			}
 
 			the_post();
 
