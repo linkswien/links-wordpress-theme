@@ -24,12 +24,12 @@ get_header();
 				$image = get_bezirksseiten_header_image( $categories );
 			}
 
-			// if ( has_menschen_von_links( $categories ) && $has_thumbnail ) {
-			// 	echo '<img src=\'' . $image . '\' alt="Portrait">';
-			// }
-			// else {
-			// 	echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
-			// }
+			if ( has_menschen_von_links( $categories ) && $has_thumbnail ) {
+				echo '<img src=\'' . $image . '\' alt="Portrait">';
+			}
+			else {
+				echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
+			}
 
 			the_post();
 

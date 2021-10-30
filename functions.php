@@ -258,6 +258,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require __DIR__ . '/inc/bezirkssite-header.php';
 
 /**
+ * Load function to check for 'menschen von links' category
+ */
+require __DIR__ . '/inc/menschen-von-links.php';
+
+/**
  * Activate shortcuts in footers.
  */
 add_filter('widget_text', 'shortcode_unautop');
