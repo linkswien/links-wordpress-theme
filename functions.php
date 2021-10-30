@@ -258,7 +258,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require __DIR__ . '/inc/bezirkssite-header.php';
 
 /**
- * Load function to check for 'menschen von links' category
+ * Load function to display 'Menschen von Links' single posts
  */
 require __DIR__ . '/inc/menschen-von-links.php';
 

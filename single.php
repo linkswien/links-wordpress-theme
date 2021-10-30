@@ -17,6 +17,7 @@ get_header();
 		while ( have_posts() ) :
 			$categories = get_the_category();
 			$has_thumbnail = has_post_thumbnail( $post->ID );
+			$is_menschen_von_links = has_menschen_von_links( $categories );
 			
 			if ( $has_thumbnail ) {
 				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
@@ -24,16 +25,20 @@ get_header();
 				$image = get_bezirksseiten_header_image( $categories );
 			}
 
-			if ( has_menschen_von_links( $categories ) && $has_thumbnail ) {
-				echo '<img src=\'' . $image . '\' alt="Portrait">';
-			}
-			else {
+			// do not display a header image for Menschen von Links posts
+			if ( !$is_menschen_von_links ) {
 				echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
+				
 			}
 
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			if( $is_menschen_von_links ) {
+				get_template_part( 'template-parts/content', 'menschen-von-links' );
+			}
+			else {
+				get_template_part( 'template-parts/content', get_post_type() );
+			}
 
 			the_post_navigation();
 
