@@ -11,40 +11,40 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<p>TEST</p>
 		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				links_wien_theme_posted_on();
-				links_wien_theme_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		the_title( '<h1 class="entry-title">', '</h1>' );
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'links-wien-theme' ),
-				array(
-					'span' => array(
-						'class' => array(),
+		<div class="wp-block-columns">
+			<div class="wp-block-column" style="flex-basis:33.33%">
+				<figure class="wp-block-image size-large">
+					<?php
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
+						echo '<img loading="lazy" src="' . $image . '" alt="Portrait" class="wp-image-1826">';
+					?>
+				</figure>
+			</div>
+			<div class="wp-block-column" style="flex-basis:66.66%">
+				<?php
+				the_content( sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'links-wien-theme' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
 					),
-				)
-			),
-			get_the_title()
-		) );
-
+					get_the_title()
+				) );
+				?>
+			</div>
+		</div>
+		
+		<?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'links-wien-theme' ),
 			'after'  => '</div>',
