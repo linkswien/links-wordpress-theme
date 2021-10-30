@@ -7,5 +7,5 @@ function has_menschen_von_links($categories)
         array_push($category_slugs, $category->slug);
     }
 
-    return in_array('Menschen von Links', $category_slugs)
+    return in_array('Menschen von Links', $category_slugs);
 }
