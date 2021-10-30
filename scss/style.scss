@@ -1058,6 +1058,7 @@ main > .event,
 }
 
 .footer-form-container {
+	margin: 0 auto;
 	max-width: 70rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -1511,8 +1512,9 @@ object {
 	height: 5em !important;
 	resize: vertical;
 }
-.mauticform-field-container > label {
+.mauticform-field-container > label, .mauticform-label {
 	margin-bottom: 0px;
+	font-size: 0.8rem;
 }
 .mauticform-innerform a {
 	text-decoration: underline !important;

@@ -33,7 +33,7 @@
 								<span class="mauticform-errormsg" style="display:none;">Bitte gib deinen Vornamen an!</span>
 							</div>
 							<div class="mauticform-field-container" style="flex: 2;" data-validate="nachname" data-validation-type="text">
-								<label for="mauticform_input_mitmachen_nachname">Vorname</label>
+								<label for="mauticform_input_mitmachen_nachname">Nachname</label>
 								<input type="text" id="mauticform_input_mitmachen_nachname" placeholder="Nachname" name="mauticform[nachname]">
 								<span class="mauticform-errormsg" style="display:none;">Bitte gib deinen Nachnamen an!</span>
 							</div>
