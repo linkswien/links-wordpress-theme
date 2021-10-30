@@ -1523,6 +1523,7 @@ a:active {
 
 .mauticform-field-container textarea {
 	height: 5em !important;
+	resize: vertical;
 }
 .mauticform-field-container > label {
 	margin-bottom: 0px;

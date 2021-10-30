@@ -137,12 +137,6 @@
 						<textarea id="mauticform_label_mitmachen_was_willst_du_tun" name="mauticform[was_willst_du_tun]" placeholder="Platz für deine Ideen, Fragen &amp; Kommentare…"></textarea>
 					</div>
 
-					<div id="mauticform_mitmachen_was_willst_du_tun" class="mauticform-row mauticform-text mauticform-field-7 mitmachen">
-						<label id="mauticform_label_mitmachen_was_willst_du_tun" for="mauticform_input_mitmachen_was_willst_du_tun" class="mauticform-label mitmachen">Was willst du tun?</label>
-						<textarea id="mauticform_input_mitmachen_was_willst_du_tun" name="mauticform[was_willst_du_tun]" class="mauticform-textarea mitmachen"></textarea>
-						<span class="mauticform-errormsg" style="display: none;"></span>
-					</div>
-
 					<button type="submit" name="mauticform[bin_dabei]" id="mauticform_input_mitmachen_bin_dabei" class="button" style="margin-top: 1rem;">Bin dabei*</button>
 					<small> *Ich stimme der <a href="https://links-wien.at/impressum-und-datenschutz/">Datenschutzerklärung</a> zu.</small>
 
