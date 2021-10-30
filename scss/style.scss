@@ -1353,38 +1353,6 @@ object {
 }
 
 /*--------------------------------------------------------------
-## Special widgets
---------------------------------------------------------------*/
-
-.full-width-purple {
-	color: white;
-	background-color: $violet;
-	margin-left: -2rem;
-	margin-right: -2rem;
-	padding: 2rem;
-}
-
-.full-width-purple a {
-	color: $orange;
-	text-decoration: none;
-}
-
-.full-width-purple a:hover,
-a:focus,
-a:active {
-	text-decoration: underline;
-}
-
-@media (min-width: 70rem) {
-	.full-width-purple {
-		margin-left: calc(-50vw + 33rem);
-		margin-right: calc(-50vw + 33rem);
-		padding-left: calc(50vw - 33rem);
-		padding-right: calc(50vw - 33rem);
-	}
-}
-
-/*--------------------------------------------------------------
 ## 404 page
 --------------------------------------------------------------*/
 
