@@ -11,6 +11,150 @@
 
 ?>
 
+	<footer id="footer-1">
+		<div id="mitmachen" class="headline-container">
+			<h2>Werde jetzt aktiv bei LINKS:</h2>
+			Bei LINKS sind Menschen aus allen Lebenslagen mit dabei. Gemeinsam kämpfen wir für ein gerechtes Wien.
+
+			Bring dich ein und gestalte mit uns die Zukunft!
+
+		</div>
+
+		<div id="mauticform_wrapper_mitmachen" class="mauticform_wrapper">
+			<form autocomplete="false" role="form" method="post" action="https://mautic.links-wien.at/form/submit?formId=8" id="mauticform_mitmachen" data-mautic-form="mitmachen" enctype="multipart/form-data" mitmachen>
+				<div class="mauticform-error" id="mauticform_mitmachen_error"></div>
+				<div class="mauticform-message" id="mauticform_mitmachen_message"></div>
+				<div class="mauticform-innerform">
+					<div class="mauticform-side-by-side">
+						<div class="mauticform-field-container" data-validate="vorname" data-validation-type="text">
+							<label for="mauticform_input_mitmachen_vorname">Vorname</label>
+							<input type="text" id="mauticform_input_mitmachen_vorname" placeholder="Vorname" name="mauticform[vorname]">
+							<span class="mauticform-errormsg" style="display:none;">Bitte gib deinen Vornamen an!</span>
+						</div>
+						<div class="mauticform-field-container" style="flex: 2;" data-validate="nachname" data-validation-type="text">
+							<label for="mauticform_input_mitmachen_nachname">Vorname</label>
+							<input type="text" id="mauticform_input_mitmachen_nachname" placeholder="Nachname" name="mauticform[nachname]">
+							<span class="mauticform-errormsg" style="display:none;">Bitte gib deinen Nachnamen an!</span>
+						</div>
+					</div>
+
+					<div class="mauticform-side-by-side">
+						<div class="mauticform-field-container" data-validate="email" data-validation-type="email">
+							<label for="mauticform_input_mitmachen_email">E-Mail</label>
+							<input type="text" id="mauticform_input_mitmachen_email" placeholder="deine@adresse.at" name="mauticform[email]">
+							<span class="mauticform-errormsg" style="display:none;">Bitte gib deine E-Mail-Adresse an!</span>
+						</div>
+						<div class="mauticform-field-container" data-validate="telefonnummer" data-validation-type="tel">
+							<label for="mauticform_input_mitmachen_telefonnummer">Telefonnummer</label>
+							<input type="text" id="mauticform_input_mitmachen_telefonnummer" placeholder="0678 90 123 45" name="mauticform[telefonnummer]">
+							<span class="mauticform-errormsg" style="display:none;">Bitte gib deine Telefonnummer an!</span>
+						</div>
+					</div>
+
+					<div class="mauticform-field-container" data-validate="bezirk" data-validation-type="select">
+						<label for="mauticform_input_mitmachen_bezirk">Bezirk</label>
+						<select value="" id="mauticform_input_mitmachen_bezirk" name="mauticform[bezirk]" class="mauticform-select">
+							<option value="">Wähle deinen Bezirk aus…</option>
+							<option value="1010">1010 – Innere Stadt</option>
+							<option value="1020">1020 – Leopoldstadt</option>
+							<option value="1030">1030 – Landstraße</option>
+							<option value="1040">1040 – Wieden</option>
+							<option value="1050">1050 – Margareten</option>
+							<option value="1060">1060 – Mariahilf</option>
+							<option value="1070">1070 – Neubau</option>
+							<option value="1080">1080 – Josefstadt</option>
+							<option value="1090">1090 – Alsergrund</option>
+							<option value="1100">1100 – Favoriten</option>
+							<option value="1110">1110 – Simmering</option>
+							<option value="1120">1120 – Meidling</option>
+							<option value="1130">1130 – Hietzing</option>
+							<option value="1140">1140 – Penzing</option>
+							<option value="1150">1150 – Rudolfsheim-Fünfhaus</option>
+							<option value="1160">1160 – Ottakring</option>
+							<option value="1170">1170 – Hernals</option>
+							<option value="1180">1180 – Währing</option>
+							<option value="1190">1190 – Döbling</option>
+							<option value="1200">1200 – Brigittenau</option>
+							<option value="1210">1210 – Floridsdorf</option>
+							<option value="1220">1220 – Donaustadt</option>
+							<option value="1230">1230 – Liesing</option>
+						</select>
+						<span class="mauticform-errormsg" style="display: none;">Bitte wähle deinen Bezirk aus!</span>
+					</div>
+
+					<div class="mauticform-field-container" style="margin-top: 3rem;">
+						<label>Wofür interessierst du dich?</label>
+						<div class="mauticform-side-by-side">
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0">
+								<input value="ig-antirassismus" type="checkbox" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0" name="interest-antira">
+								<p>Antirassismus</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igbildung1">
+								<input value="ig-bildung" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igbildung1" name="interest-bildung">
+								<p>Bildung</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2">
+								<input value="ig-flint" type="checkbox" name="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2" id="interest-flinta">
+								<p>FLINTA <small>Frauen, Lesben, Inter, Trans, Agender</small></p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iggewerkschaft3">
+								<input value="ig-gewerkschaft" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iggewerkschaft3" name="interest-gewerkschaft">
+								<p>Gewerkschaftsarbeit</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igjugend4">
+								<input value="ig-jugend" type="checkbox" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igjugend4" name="interest-jugend">
+								<p>Jugend</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igkultur5">
+								<input value="ig-kultur" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igkultur5" name="interest-kultur">
+								<p>Kunst &amp; Kultur</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6">
+								<input value="ig-lgbtqia" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6" name="interest-lgbtqia">
+								<p>Queeres</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igmarxismus7">
+								<input value="ig-marxismus" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igmarxismus7" name="interest-marxismus">
+								<p>Marxismus</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igumwelt8">
+								<input value="ig-umwelt" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igumwelt8" name="interest-umwelt">
+								<p>Umwelt</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igverkehr9">
+								<input value="ig-verkehr" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igverkehr9" name="interest-verkehr">
+								<p>Verkehr</p>
+							</label>
+							<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igwohnen10">
+								<input value="ig-wohnen" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igwohnen10" name="interest-wohnen">
+								<p>Wohnen</p>
+							</label>
+						</div>
+					</div>
+
+					<div class="mauticform-field-container">
+						<label for="mauticform_label_mitmachen_was_willst_du_tun">Was willst du tun?</label>
+						<textarea id="mauticform_label_mitmachen_was_willst_du_tun" name="mauticform[was_willst_du_tun]" placeholder="Platz für deine Ideen, Fragen &amp; Kommentare…"></textarea>
+					</div>
+
+					<div id="mauticform_mitmachen_was_willst_du_tun" class="mauticform-row mauticform-text mauticform-field-7 mitmachen">
+						<label id="mauticform_label_mitmachen_was_willst_du_tun" for="mauticform_input_mitmachen_was_willst_du_tun" class="mauticform-label mitmachen">Was willst du tun?</label>
+						<textarea id="mauticform_input_mitmachen_was_willst_du_tun" name="mauticform[was_willst_du_tun]" class="mauticform-textarea mitmachen"></textarea>
+						<span class="mauticform-errormsg" style="display: none;"></span>
+					</div>
+
+					<button type="submit" name="mauticform[bin_dabei]" id="mauticform_input_mitmachen_bin_dabei" class="button" style="margin-top: 1rem;">Bin dabei*</button>
+					<small> *Ich stimme der <a href="https://links-wien.at/impressum-und-datenschutz/">Datenschutzerklärung</a> zu.</small>
+
+				</div>
+
+				<input type="hidden" name="mauticform[formId]" id="mauticform_mitmachen_id" value="8">
+				<input type="hidden" name="mauticform[return]" id="mauticform_mitmachen_return" value="">
+				<input type="hidden" name="mauticform[formName]" id="mauticform_mitmachen_name" value="mitmachen">
+
+			</form>
+		</div>
+	</footer>
 
 	<footer id="footer-2" class="widget-area">
 

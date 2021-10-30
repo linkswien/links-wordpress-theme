@@ -135,6 +135,13 @@ $white: #fff;
 	border: 1px solid $orange;
 }
 
+#page input:not([type="submit"],[type='checkbox']):hover,
+#footer-1 input:not([type="submit"],[type='checkbox']):hover,
+#page textarea:hover {
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.2);
+}
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -1450,35 +1457,77 @@ a:active {
 ## Mautic form
 --------------------------------------------------------------*/
 
-.mauticform-page-wrapper.mauticform-page-1 {
+
+.mauticform-innerform {
+	margin: calc(2rem - 10px) 1rem;
+}
+
+.mauticform-errormsg {
+	color: red;
+	font-size: 0.7rem;
+}
+
+.mauticform-field-container {
 	display: flex;
 	flex-direction: column;
+	margin: 10px 0;
+}
+.mauticform-side-by-side .mauticform-field-container {
+	margin: 10px 5px 0;
+	flex: 1;
+}
+.mauticform-side-by-side {
+	display: flex;
+	margin: 0 -5px;
+	border: none;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: start;
+}
+.mauticform-radio-container, .mauticform-checkbox-container {
+	margin: 3px;
+	flex: 1 auto;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	align-self: start;
+	display: flex;
+}
+.mauticform-radio-container:hover, .mauticform-checkbox-container:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+.mauticform-radio-container label, .mauticform-checkbox-container label {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	line-height: 2.4;
+}
+.mauticform-radio-container input, .mauticform-checkbox-container input {
+	margin: 0 10px;
+}
+.mauticform-checkbox-container {
+	small {
+		line-height: 1.3;
+	}
+	p {
+		flex: 1;
+		margin: 0;
+		margin-right: 10px;
+	}
 }
 
-.mauticform-row {
-	margin-top: 1em;
-	max-width: 25rem;
+.mauticform-field-container textarea {
+	height: 5em !important;
+}
+.mauticform-field-container > label {
+	margin-bottom: 0px;
+}
+.mauticform-innerform a {
+	text-decoration: underline !important;
 }
 
-.mauticform-input,
-.mauticform-selectbox,
-.mauticform-textarea {
-	width: 100%;
-}
-
-.mauticform-selectbox {
-	height: 38px;
-}
-
-#footer-1 .mauticform-textarea {
-	height: 5em;
-}
-
-.mauticform-freehtml {
-	font-size: 10px;
-}
-
-#footer-1 .textwidget {
+#footer-1 {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -1492,21 +1541,6 @@ a:active {
 	#footer-1 .headline-container {
 		flex-basis: 100%;
 	}
-}
-
-#footer-1 .mauticform_wrapper {
-	flex: 2;
-}
-
-#footer-1 .mauticform_wrapper > div {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 35em;
-}
-
-#footer-1 .mauticform-row {
-	margin-right: 1em;
-	margin-left: 1em;
 }
 
 #footer-2 .menu {
