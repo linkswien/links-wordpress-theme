@@ -16,6 +16,8 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
+			get_the_post_thumbnail( the_ID() );
+
 			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
