@@ -184,7 +184,7 @@ function insert_og_in_head() {
 	echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '"/>';
 
 	// Try getting post or category header picture
-	if ( has_post_thumbnail( $post->ID ) ) {
+	if ( $post && has_post_thumbnail( $post->ID ) ) {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 	} else {
 		$image = get_bezirksseiten_header_image(get_the_category());
@@ -220,8 +220,8 @@ function insert_og_in_head() {
 	}
 	echo '<meta name="description" content="' . $excerpt . '" />';
 	echo '<meta property="og:description" content="' . $excerpt . '" />';
-  echo '<meta property="og:title" content="' . get_the_title() . ' – ' . get_bloginfo('name') . '"/>';
-  echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+    echo '<meta property="og:title" content="' . get_the_title() . ' – ' . get_bloginfo('name') . '"/>';
+    echo '<meta property="og:url" content="' . get_permalink() . '"/>';
 }
 add_action( 'wp_head', 'insert_og_in_head', 5 );
 
