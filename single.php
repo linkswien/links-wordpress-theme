@@ -25,7 +25,7 @@ get_header();
 			}
 
 			if ( has_menschen_von_links($categories) && $has_thumbnail ) {
-				echo '<img src=' . $image . ' alt="Portrait">';
+				echo '<img src=\'' . $image . '\' alt="Portrait">';
 			}
 			else {
 				echo '<div class="wp-block-cover has-background-dim-20 has-background-dim is-position-center-center taller" style="background-image:url(\'' . $image . '\')"></div>';
