@@ -118,20 +118,32 @@ $white: #fff;
 	cursor: pointer;
 }
 
-#page input:not([type="submit"]),
+#page input:not([type="submit"],[type='checkbox']),
 #page textarea,
 #page select {
 	height: 38px;
 	border-radius: 4px;
-	border: none;
+	border: 1px solid rgba(255,255,255,0.1);
 	outline: none;
 	padding: 6px 10px;
+	background-color: rgba(255,255,255,0.1);
+	color: #fff;
+	transition: background-color 0.3s,border 0.3s;
 }
 
-#page input:not([type="submit"]):focus,
-#footer-1 input:not([type="submit"]):focus,
+#page input:not([type="submit"],[type='checkbox']):focus,
+#footer-1 input:not([type="submit"],[type='checkbox']):focus,
 #page textarea:focus {
-	border: 1px solid $orange;
+	border: 1px solid $orange !important;
+	background-color: #fff !important;
+	color: #000;
+}
+
+#page input:not([type="submit"],[type='checkbox']):hover,
+#footer-1 input:not([type="submit"],[type='checkbox']):hover,
+#page textarea:hover {
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.2);
 }
 
 /**
@@ -1018,9 +1030,6 @@ main > .event,
 	background-color: $violetDark;
 	padding: 2em;
 	color: white;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
 }
 
 #footer-2 {
@@ -1032,10 +1041,11 @@ main > .event,
 	justify-content: space-evenly;
 }
 
-#footer-1 section {
+.footer-form-container {
+	max-width: 70rem;
 	display: flex;
-	margin: 0 2em;
-	min-width: 22em;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 footer .widget_nav_menu li {
@@ -1417,37 +1427,78 @@ object {
 ## Mautic form
 --------------------------------------------------------------*/
 
-.mauticform-page-wrapper.mauticform-page-1 {
+#footer-1 .mauticform_wrapper {
+	flex: 2;
+}
+
+.mauticform-innerform {
+	margin: calc(2rem - 10px) 1rem;
+}
+
+.mauticform-errormsg {
+	color: red;
+	font-size: 0.7rem;
+}
+
+.mauticform-field-container {
 	display: flex;
 	flex-direction: column;
+	margin: 10px 0;
 }
-
-.mauticform-row {
-	margin-top: 1em;
-	max-width: 25rem;
+.mauticform-side-by-side .mauticform-field-container {
+	margin: 10px 5px 0;
+	flex: 1;
 }
-
-.mauticform-input,
-.mauticform-selectbox,
-.mauticform-textarea {
-	width: 100%;
-}
-
-.mauticform-selectbox {
-	height: 38px;
-}
-
-#footer-1 .mauticform-textarea {
-	height: 5em;
-}
-
-.mauticform-freehtml {
-	font-size: 10px;
-}
-
-#footer-1 .textwidget {
+.mauticform-side-by-side {
 	display: flex;
+	margin: 0 -5px;
+	border: none;
+	padding: 0;
 	flex-wrap: wrap;
+	justify-content: start;
+}
+.mauticform-radio-container, .mauticform-checkbox-container {
+	margin: 3px;
+	flex: 1 auto;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	align-self: start;
+	display: flex;
+}
+.mauticform-radio-container:hover, .mauticform-checkbox-container:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+.mauticform-radio-container label, .mauticform-checkbox-container label {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	line-height: 2.4;
+}
+.mauticform-radio-container input, .mauticform-checkbox-container input {
+	margin: 0 10px;
+}
+.mauticform-checkbox-container {
+	small {
+		line-height: 1.3;
+	}
+	p {
+		flex: 1;
+		margin: 0;
+		margin-right: 10px;
+	}
+}
+
+.mauticform-field-container textarea {
+	height: 5em !important;
+	resize: vertical;
+}
+.mauticform-field-container > label {
+	margin-bottom: 0px;
+}
+.mauticform-innerform a {
+	text-decoration: underline !important;
 }
 
 #footer-1 .headline-container {
@@ -1459,21 +1510,6 @@ object {
 	#footer-1 .headline-container {
 		flex-basis: 100%;
 	}
-}
-
-#footer-1 .mauticform_wrapper {
-	flex: 2;
-}
-
-#footer-1 .mauticform_wrapper > div {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 35em;
-}
-
-#footer-1 .mauticform-row {
-	margin-right: 1em;
-	margin-left: 1em;
 }
 
 #footer-2 .menu {
