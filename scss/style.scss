@@ -1031,9 +1031,6 @@ main > .event,
 	background-color: $violetDark;
 	padding: 2em;
 	color: white;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
 }
 
 #footer-2 {
@@ -1047,6 +1044,9 @@ main > .event,
 
 .footer-form-container {
 	max-width: 70rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 footer .widget_nav_menu li {
@@ -1532,11 +1532,6 @@ a:active {
 }
 .mauticform-innerform a {
 	text-decoration: underline !important;
-}
-
-#footer-1 {
-	display: flex;
-	flex-wrap: wrap;
 }
 
 #footer-1 .headline-container {
