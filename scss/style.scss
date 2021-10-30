@@ -3,7 +3,6 @@ Theme Name: Links Wien Theme
 
 Links Wien Theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
---test ci
 */
 
 /*--------------------------------------------------------------
@@ -1065,19 +1064,19 @@ footer ol {
 	text-transform: uppercase;
 }
 
-footer .social-media svg {
+#footer-2 .social-media svg {
 	display: inline-block;
 	height: 1.6em;
 	width: 1.6em;
 	margin: 1em 1em 1em 0;
 }
 
-footer a.social-media {
+#footer-2 a.social-media {
 	color: #fff;
 	text-decoration: none;
 }
 
-footer a.social-media:hover {
+#footer-2 a.social-media:hover {
 	color: $orange;
 }
 
