@@ -80,7 +80,7 @@
 									</label>
 									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igflint2" class="mauticform-checkboxgrp-label">
 										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igflint2" type="checkbox" value="ig-flint">
-										<p>FLINTA</p><small>Frauen, Lesben, Inter, Non-binary, Trans, Agender</small>
+										<p>FLINTA <small>Frauen, Lesben, Inter, Non-binary, Trans, Agender</small></p>
 									</label>
 									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iggewerkschaft3" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_iggewerkschaft3" class="mauticform-checkboxgrp-label">
 										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_iggewerkschaft3" type="checkbox" value="ig-gewerkschaft">
