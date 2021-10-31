@@ -1855,7 +1855,7 @@ object {
 
 .em-search-advanced {
 	//width: 14rem;
-	width: fit-content;
+	width: max-content;
 	
 	@media (max-width: 876px) {
 		margin-left: auto;
@@ -1864,7 +1864,7 @@ object {
 	margin-left: auto;
 }
 
-.em-events-search-category {
+#page select.em-events-search-category {
 	color: #000;
     font-weight: 700;
 	width: 100%;
