@@ -96,7 +96,9 @@ $white: #fff;
 	 ========================================================================== */
 
 // Helper class for hiding additional blocks to subscribed users
-.user-role-subscriber .hide-for-subscriber {
+.user-role-subscriber .hide-for-subscriber,
+.user-role-author .hide-for-subscriber,
+.user-role-editor .hide-for-subscriber {
   display: none;
 }
 

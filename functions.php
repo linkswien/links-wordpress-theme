@@ -108,10 +108,8 @@ endif;
 add_action( 'after_setup_theme', 'links_wien_theme_setup' );
 
 // Add body class for user roles
-add_filter( 'body_class', 'body_class_user_role' );
-
 function body_class_user_role( $classes ) {
-
+	
 	if( is_user_logged_in() ) {
 		$user = wp_get_current_user();
 		$roles = $user->roles;
@@ -119,10 +117,11 @@ function body_class_user_role( $classes ) {
 	}
 	return $classes;
 }
+add_filter( 'body_class', 'body_class_user_role' );
 
 // Hide admin bar for subscribers
 function remove_admin_bar() {
-	if ( current_user_can('subscriber') ) {
+	if ( current_user_can('subscriber') && !current_user_can('author') ) {
 		show_admin_bar(false);
 	}
 }
