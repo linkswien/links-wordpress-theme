@@ -1439,6 +1439,40 @@ object {
 	display: block;
 }
 
+// Menschen von LINKS
+.menschen-von-links {
+	display: grid !important;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 0;
+}
+@media (max-width: 960px) {
+	.menschen-von-links {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.menschen-von-links li {
+	width: 100% !important;
+	margin: 0 !important;
+	aspect-ratio: 1;
+	overflow: hidden;
+}
+.menschen-von-links > li > a {
+	display: none;
+}
+.menschen-von-links > li > div > a {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	transition: transform .2s;
+}
+.menschen-von-links > li > div > a:hover {
+	transform: scale(1.1);
+}
+.menschen-von-links > li > div {
+	height: 100%;
+}
+
 /*--------------------------------------------------------------
 ## 404 page
 --------------------------------------------------------------*/
