@@ -121,7 +121,13 @@ add_filter( 'body_class', 'body_class_user_role' );
 
 // Hide admin bar for subscribers
 function remove_admin_bar() {
-	if ( current_user_can('subscriber') && !current_user_can('author') ) {
+	if ( current_user_can('subscriber') &&
+		( !current_user_can('author')
+		|| !current_user_can('editor')
+		|| !current_user_can('contributor')
+		|| !current_user_can('subscriber')
+		)
+	) {
 		show_admin_bar(false);
 	}
 }
