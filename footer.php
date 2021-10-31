@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="footer-1">
+	<footer id="footer-1" class="hide-for-subscriber">
 		<div class="footer-form-container">
 			<div id="mitmachen" class="headline-container">
 				<h2>Werde jetzt aktiv bei LINKS:</h2>
