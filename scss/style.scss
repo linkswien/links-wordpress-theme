@@ -95,13 +95,8 @@ $white: #fff;
 /* Forms
 	 ========================================================================== */
 
-// Hide Mautic forms to subscribed users
-.user-role-subscriber .mauticform_wrapper {
-	display:none;
-}
-
 // Helper class for hiding additional blocks to subscribed users
-.hide-for-subscriber {
+.user-role-subscriber .hide-for-subscriber {
   display: none;
 }
 
