@@ -863,6 +863,59 @@ table {
 }
 
 /*--------------------------------------------------------------
+# Special styles for the newsletter form + main image on the Startpage & Menschen Seite
+--------------------------------------------------------------*/
+
+.entry-content > .newsletterhead {
+
+	position: relative;
+
+	div.wp-block-group__inner-container {
+		padding: 0;
+		max-width: none;
+	}
+
+	.newsletterform {
+		background-color: $violet;
+		color: $white;
+		padding: 1em 2em;
+
+		a {
+			color: $white;
+		}
+	}
+
+	.wp-block-cover {
+		min-height: unset;
+		padding: 0;
+		img {
+			position: relative;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	@media screen and (min-width: 50em) {
+		.newsletterform {
+			position: absolute;
+			right: 2em;
+			top: 2em;
+			z-index: 100;
+			min-width: 20em;
+			max-width: 32em;
+			width: 30em;
+		}
+
+		.wp-block-cover img {
+				min-height:38em;
+				max-width: 100%;
+		}
+	}
+
+}
+
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
