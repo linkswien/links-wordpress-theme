@@ -107,6 +107,27 @@ if ( ! function_exists( 'links_wien_theme_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'links_wien_theme_setup' );
 
+// Add body class for user roles
+add_filter( 'body_class', 'body_class_user_role' );
+
+function body_class_user_role( $classes ) {
+
+	if( is_user_logged_in() ) {
+		$user = wp_get_current_user();
+		$roles = $user->roles;
+		$classes[] = 'user-role-' . $roles[0];
+	}
+	return $classes;
+}
+
+// Hide admin bar for subscribers
+function remove_admin_bar() {
+	if ( current_user_can('subscriber') ) {
+		show_admin_bar(false);
+	}
+}
+add_action( 'after_setup_theme', 'remove_admin_bar' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
