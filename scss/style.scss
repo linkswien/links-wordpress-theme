@@ -432,18 +432,18 @@ blockquote {
 		color: darken($white, 7%);
 		font-size: 5em;
 		z-index: -1;
-	 }
-	 p {
+	}
+	p {
 		font-size: 125%;
 		font-weight: bold;
 		margin-left: 2rem;
 		font-style: italic;
-	 }
-	 cite {
+	}
+	cite {
 		display: block;
 		margin-top: -.8rem;
 		margin-left: 2rem;
-	 }
+	}
 }
 
 address {
@@ -865,7 +865,6 @@ a:active {
 }
 
 .post,
-main > .event,
 .page > .entry-footer,
 .comments-area,
 .error-404 {
@@ -980,9 +979,9 @@ main > .event,
 }
 
 @media (max-width: 599px) {
-  .kandidatinnen-details .wp-block-columns:nth-of-type(2n) .wp-block-column:nth-child(2) {
-    order: -1;
-  }
+	.kandidatinnen-details .wp-block-columns:nth-of-type(2n) .wp-block-column:nth-child(2) {
+		order: -1;
+	}
 }
 
 .programmpunkt {
@@ -1536,10 +1535,27 @@ a:active {
 .events-table {
 	width: auto;
 	border-collapse: collapse;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: flex-start;
+	margin-top: 1.5rem;
+
+	display: grid;
+
+	@media (min-width: 440px) {
+		grid-template-columns: auto;
+	}
+
+	@media (min-width: 876px) {
+		grid-template-columns: auto auto;
+	}
+
+	@media (min-width: 1256px) {
+		grid-template-columns: auto auto auto;
+	}
+
+	@media (max-width: 439px) {
+		.event {
+			width: 100% !important;
+		}
+	}
 
 	thead {
 		margin-bottom: 0.5em;
@@ -1567,9 +1583,14 @@ a:active {
 	.event {
 		border: 1px solid #ccc;
 		border-radius: 0.5rem;
-		max-width: 380px;
+		width: 380px;
 		flex: 1 1 30%;
+
 		margin: 1rem;
+
+		margin-left: auto;
+		margin-right: auto;
+
 		text-decoration: none;
 		transition: transform 0.2s;
 		color: #000;
@@ -1582,15 +1603,29 @@ a:active {
 
 	.event-thumbnail {
 		min-height: 0.5rem;
+
+		img {
+			width: 100%;
+			height: 12.5rem;
+			object-fit: cover;
+			object-position: 50% 50%;
+		}
 	}
 
 	.event-text {
-		margin: 0 .5em .5em .5em;
+		margin: 0 0.5em 0.5em 0.5em;
+		@media (max-width: 439px) {
+			white-space: inherit;
+			hyphens: auto;
+		}
 	}
 
 	.event-dates {
 		opacity: 0.7;
 		white-space: nowrap;
+		@media (max-width: 439px) {
+			white-space: inherit;
+		}
 	}
 
 	.event-link {
@@ -1654,30 +1689,93 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+	## EM-Search-Form
+--------------------------------------------------------------*/
+
+.em-search-advanced {
+	//width: 14rem;
+	width: fit-content;
+	
+	@media (max-width: 876px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	margin-left: auto;
+}
+
+.em-events-search-category {
+	color: #000;
+    font-weight: 700;
+	width: 100%;
+
+	option {
+		text-transform: initial;
+	}
+
+	border-left: 5px solid #FA7F16 !important;
+	border-radius: 0px !important;
+}
+
+.em-search-submit {
+	display: none !important;
+}
+
+/*--------------------------------------------------------------
+	## Single Event Page
+--------------------------------------------------------------*/
+
+.event-page {
+	border: none;
+	border-radius: 0px;
+
+	display: grid;
+
+	@media (min-width: 950px) {
+		grid-template-columns: 35% 65%;
+	}
+	
+	.event-thumbnail {
+		background-color: inherit;
+		align-items: baseline;
+		margin: 2rem;
+	}
+
+	.event-info {
+		//padding-left: 5rem;
+	}
+}
+
+main > .event {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+/*--------------------------------------------------------------
 	## Bezirksgruppen-Sites
 --------------------------------------------------------------*/
 
 .slick-arrow {
-  width: 30px !important; // Set correct size of arrow in article-carousel-plugin (overwrite full width)
+	width: 30px !important; // Set correct size of arrow in article-carousel-plugin (overwrite full width)
 }
 
 .wppsac-post-slider-init {
-  margin-left: -10px; // Compensate for padding-left of article-carousel entry padding
+	margin-left: -10px; // Compensate for padding-left of article-carousel entry padding
 }
 
 .bg-events-container .events-table {
-    justify-content: left;
-    margin-left: -1rem;
+	justify-content: left;
+	margin-left: -1rem;
 }
 
 .slick-dots button {
-  border: 1px solid black !important; // Override button style for article-carousel indicator
+	border: 1px solid black !important; // Override button style for article-carousel indicator
 }
 
 .wppsac-post-categories ul.wppsac-post-categories-list li a {
-  background-color: #5E219F !important;
+	background-color: #5E219F !important;
 }
 
 .bg-events-hidden {
-  display: none !important;
+	display: none !important;
 }
