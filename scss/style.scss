@@ -3,7 +3,6 @@ Theme Name: Links Wien Theme
 
 Links Wien Theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
---test ci
 */
 
 /*--------------------------------------------------------------
@@ -103,10 +102,12 @@ $white: #fff;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
+	font-size: 2rem;
+	font-style: italic;
 	width: 100%;
 	border: none;
-	border-radius: 4px;
-	padding: 12px 15px 10px 15px;
+	padding: 5px 15px;
+	margin-top: 10px;
 	text-decoration: none;
 	outline: none;
 	display: inline-block;
@@ -119,20 +120,48 @@ $white: #fff;
 	cursor: pointer;
 }
 
-#page input:not([type="submit"]),
+#page input:not([type="submit"],[type='checkbox']),
 #page textarea,
 #page select {
 	height: 38px;
 	border-radius: 4px;
-	border: none;
+	border: 1px solid rgba(255,255,255,0.1);
 	outline: none;
 	padding: 6px 10px;
+	background-color: rgba(255,255,255,0.1);
+	color: #fff;
+	transition: background-color 0.3s,border 0.3s;
 }
 
-#page input:not([type="submit"]):focus,
-#footer-1 input:not([type="submit"]):focus,
+#page input:not([type="submit"],[type='checkbox'])::placeholder,
+#page textarea::placeholder {
+	color: rgba(255,255,255,0.7);
+}
+
+#page input:not([type="submit"],[type='checkbox']):focus::placeholder,
+#page textarea:focus::placeholder {
+	color: rgba(0,0,0,0.5);
+}
+
+#page input:not([type="submit"],[type='checkbox']):focus,
+#footer-1 input:not([type="submit"],[type='checkbox']):focus,
 #page textarea:focus {
-	border: 1px solid $orange;
+	border: 1px solid $orange !important;
+	background-color: #fff !important;
+	color: #000;
+}
+
+#page input:not([type="submit"],[type='checkbox']):hover,
+#footer-1 input:not([type="submit"],[type='checkbox']):hover,
+#page textarea:hover {
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.2);
+}
+
+#page option,
+#footer option {
+	color: #000;
+    background: #fff;
 }
 
 /**
@@ -1019,9 +1048,6 @@ main > .event,
 	background-color: $violetDark;
 	padding: 2em;
 	color: white;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
 }
 
 #footer-2 {
@@ -1033,10 +1059,12 @@ main > .event,
 	justify-content: space-evenly;
 }
 
-#footer-1 section {
+.footer-form-container {
+	margin: 0 auto;
+	max-width: 70rem;
 	display: flex;
-	margin: 0 2em;
-	min-width: 22em;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 footer .widget_nav_menu li {
@@ -1065,19 +1093,19 @@ footer ol {
 	text-transform: uppercase;
 }
 
-footer .social-media svg {
+#footer-2 .social-media svg {
 	display: inline-block;
 	height: 1.6em;
 	width: 1.6em;
 	margin: 1em 1em 1em 0;
 }
 
-footer a.social-media {
+#footer-2 a.social-media {
 	color: #fff;
 	text-decoration: none;
 }
 
-footer a.social-media:hover {
+#footer-2 a.social-media:hover {
 	color: $orange;
 }
 
@@ -1284,6 +1312,12 @@ object {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
+
+.wp-block-image .menschen-von-links-caption {
+    font-size: 0.85rem;
+    color: #888;
+}
+
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
@@ -1354,38 +1388,6 @@ object {
 }
 
 /*--------------------------------------------------------------
-## Special widgets
---------------------------------------------------------------*/
-
-.full-width-purple {
-	color: white;
-	background-color: $violet;
-	margin-left: -2rem;
-	margin-right: -2rem;
-	padding: 2rem;
-}
-
-.full-width-purple a {
-	color: $orange;
-	text-decoration: none;
-}
-
-.full-width-purple a:hover,
-a:focus,
-a:active {
-	text-decoration: underline;
-}
-
-@media (min-width: 70rem) {
-	.full-width-purple {
-		margin-left: calc(-50vw + 33rem);
-		margin-right: calc(-50vw + 33rem);
-		padding-left: calc(50vw - 33rem);
-		padding-right: calc(50vw - 33rem);
-	}
-}
-
-/*--------------------------------------------------------------
 ## 404 page
 --------------------------------------------------------------*/
 
@@ -1450,37 +1452,93 @@ a:active {
 ## Mautic form
 --------------------------------------------------------------*/
 
-.mauticform-page-wrapper.mauticform-page-1 {
+#footer-1 .mauticform_wrapper {
+	flex: 2;
+}
+
+#footer-1 .mauticform-innerform {
+	margin: calc(2rem - 10px) 1rem;
+}
+
+.mauticform-message {
+    background-color: $orange;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+.mauticform-message:empty {
+    padding: 0;
+}
+
+.mauticform-errormsg {
+	color: red;
+	font-size: 0.7rem;
+}
+
+.mauticform-field-container, .mauticform-row {
 	display: flex;
 	flex-direction: column;
+	margin: 10px 0;
 }
-
-.mauticform-row {
-	margin-top: 1em;
-	max-width: 25rem;
+.mauticform-side-by-side .mauticform-field-container,
+.mauticform-side-by-side .mauticform-row {
+	margin: 10px 5px 0;
+	flex: 1;
 }
-
-.mauticform-input,
-.mauticform-selectbox,
-.mauticform-textarea {
-	width: 100%;
-}
-
-.mauticform-selectbox {
-	height: 38px;
-}
-
-#footer-1 .mauticform-textarea {
-	height: 5em;
-}
-
-.mauticform-freehtml {
-	font-size: 10px;
-}
-
-#footer-1 .textwidget {
+.mauticform-side-by-side {
 	display: flex;
+	margin: 0 -5px;
+	border: none;
+	padding: 0;
 	flex-wrap: wrap;
+	justify-content: start;
+}
+.mauticform-radio-container, .mauticform-checkbox-container {
+	margin: 3px;
+	padding: 5px 0;
+	flex: 1 auto;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	align-self: start;
+	display: flex;
+}
+.mauticform-radio-container:hover, .mauticform-checkbox-container:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+.mauticform-radio-container label, .mauticform-checkbox-container label {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	line-height: 2.4;
+}
+.mauticform-radio-container input, .mauticform-checkbox-container input {
+	margin: 0 6px 0 10px;
+}
+.mauticform-checkbox-container p {
+	flex: 1;
+	margin: 0;
+	margin-right: 10px;
+}
+
+.mauticform-field-container textarea,
+.mauticform-row textarea {
+	height: 5em !important;
+	resize: vertical;
+}
+.mauticform-field-container > label, .mauticform-label {
+	margin-bottom: 0px;
+	font-size: 0.8rem;
+}
+.mauticform-innerform small, .mauticform-freehtml {
+	font-size: 80%;
+}
+.mauticform-innerform a {
+	text-decoration: underline !important;
 }
 
 #footer-1 .headline-container {
@@ -1492,21 +1550,6 @@ a:active {
 	#footer-1 .headline-container {
 		flex-basis: 100%;
 	}
-}
-
-#footer-1 .mauticform_wrapper {
-	flex: 2;
-}
-
-#footer-1 .mauticform_wrapper > div {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 35em;
-}
-
-#footer-1 .mauticform-row {
-	margin-right: 1em;
-	margin-left: 1em;
 }
 
 #footer-2 .menu {
