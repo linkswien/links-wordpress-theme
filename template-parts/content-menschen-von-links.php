@@ -19,12 +19,12 @@
 				<figure class="wp-block-image size-large">
 					<?php
 						the_title( '<h1 class="entry-title">', '</h1>' );
-						the_post_thumbnail();
-						the_post_thumbnail_caption();
-						// $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
-						// echo '<img loading="lazy" src="' . $image . '" alt="Portrait" class="wp-image-1826">';
-						// $caption = wp_get_
-						// echo '<figcaption>' .  . '</figcaption>'
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
+						$caption = the_post_thumbnail_caption();
+						echo '<img loading="lazy" src="' . $image . '" alt="Portrait" class="wp-image-1826">';
+						if ( $caption ) {
+							echo "<figcaption class='menschen-von-links-caption'>" . $caption . "</figcaption>";
+						}
 					?>
 				</figure>
 			</div>
