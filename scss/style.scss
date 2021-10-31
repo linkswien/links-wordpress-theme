@@ -1667,6 +1667,30 @@ object {
 	## Events manager
 --------------------------------------------------------------*/
 
+.bg-events-container {
+
+	@media (min-width: 440px) {
+		padding-left: 5rem;
+	}
+
+	.events-table {
+		@media (min-width: 440px) {
+			grid-template-columns: auto;
+		}
+
+		@media (min-width: 940px) {
+			grid-template-columns: 50% 50%;
+		}
+
+		@media (min-width: 1256px) {
+			grid-template-columns: 33.333% 33.333% 33.333%;
+			.event {
+				width: 320px;
+			}
+		}
+	}
+}
+
 .events-table {
 	width: auto;
 	border-collapse: collapse;
