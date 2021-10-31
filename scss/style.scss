@@ -1582,7 +1582,7 @@ object {
 	flex-wrap: wrap;
 	justify-content: start;
 }
-.mauticform-radio-container, .mauticform-checkbox-container {
+.mauticform-radio-container, .mauticform-checkboxgrp-label {
 	margin: 3px;
 	padding: 5px 0;
 	flex: 1 auto;
@@ -1593,19 +1593,19 @@ object {
 	align-self: start;
 	display: flex;
 }
-.mauticform-radio-container:hover, .mauticform-checkbox-container:hover {
+.mauticform-radio-container:hover, .mauticform-checkboxgrp-label:hover {
 	background-color: rgba(255,255,255,0.4);
 }
-.mauticform-radio-container label, .mauticform-checkbox-container label {
+.mauticform-radio-container label, .mauticform-checkboxgrp-label label {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 	line-height: 2.4;
 }
-.mauticform-radio-container input, .mauticform-checkbox-container input {
+.mauticform-radio-container input, .mauticform-checkboxgrp-label input {
 	margin: 0 6px 0 10px;
 }
-.mauticform-checkbox-container p {
+.mauticform-checkboxgrp-label p {
 	flex: 1;
 	margin: 0;
 	margin-right: 10px;
