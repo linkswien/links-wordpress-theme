@@ -67,67 +67,67 @@
 							<span class="mauticform-errormsg" style="display: none;">Bitte wähle deinen Bezirk aus!</span>
 						</div>
 
-
-						<div class="mauticform-field-container" style="margin-top: 3rem;">
-							<label>Wofür interessierst du dich?</label>
-							<div class="mauticform-side-by-side">
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0">
-									<input value="ig-antirassismus" type="checkbox" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0" name="interest-antira">
-									<p>Antirassismus</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igbildung1">
-									<input value="ig-bildung" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igbildung1" name="interest-bildung">
-									<p>Bildung</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2">
-									<input value="ig-flint" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2" name="interest-flinta">
-									<p>FLINTA <small>Frauen, Lesben, Inter, Trans, Agender</small></p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iggewerkschaft3">
-									<input value="ig-gewerkschaft" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iggewerkschaft3" name="interest-gewerkschaft">
-									<p>Gewerkschaftsarbeit</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igjugend4">
-									<input value="ig-jugend" type="checkbox" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igjugend4" name="interest-jugend">
-									<p>Jugend</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igkultur5">
-									<input value="ig-kultur" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igkultur5" name="interest-kultur">
-									<p>Kunst &amp; Kultur</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6">
-									<input value="ig-lgbtqia" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6" name="interest-lgbtqia">
-									<p>LGBTQIA+</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igmarxismus7">
-									<input value="ig-marxismus" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igmarxismus7" name="interest-marxismus">
-									<p>Marxismus</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igumwelt8">
-									<input value="ig-umwelt" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igumwelt8" name="interest-umwelt">
-									<p>Umwelt</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igverkehr9">
-									<input value="ig-verkehr" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igverkehr9" name="interest-verkehr">
-									<p>Verkehr</p>
-								</label>
-								<label class="mauticform-checkbox-container" for="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igwohnen10">
-									<input value="ig-wohnen" type="checkbox" id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igwohnen10" name="interest-wohnen">
-									<p>Wohnen</p>
-								</label>
-							</div>
+						<div id="mauticform_mitmachen_wofur_interessierst_du_di" class="mauticform-row mauticform-checkboxgrp mauticform-field-6" style="margin-top: 3rem;">
+							<label class="mauticform-label" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_Antirassismus1">Wofür interessierst du dich?</label>
+								<div class="mauticform-side-by-side">
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igantirassismus0" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0" type="checkbox" value="ig-antirassismus">
+										<p>Antirassismus</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igbildung1" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igbildung1" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igbildung1" type="checkbox" value="ig-bildung">
+										<p>Bildung</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igflint2" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igflint2" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igflint2" type="checkbox" value="ig-flint">
+										<p>FLINTA</p><small>Frauen, Lesben, Inter, Non-binary, Trans, Agender</small>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iggewerkschaft3" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_iggewerkschaft3" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_iggewerkschaft3" type="checkbox" value="ig-gewerkschaft">
+										<p>Gewerkschaftsarbeit</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igjugend4" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igjugend4" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igjugend4" type="checkbox" value="ig-jugend">
+										<p>Jugend</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igkultur5" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igkultur5" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igkultur5" type="checkbox" value="ig-kultur">
+										<p>Kunst &amp; Kultur</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_iglgbtqia6" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_iglgbtqia6" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_iglgbtqia6" type="checkbox" value="ig-lgbtqia">
+										<p>LGBTQIA+</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igmarxismus7" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igmarxismus7" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igmarxismus7" type="checkbox" value="ig-marxismus">
+										<p>Marxismus</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igumwelt8" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igumwelt8" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igumwelt8" type="checkbox" value="ig-umwelt">
+										<p>Umwelt</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igverkehr9" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igverkehr9" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igverkehr9" type="checkbox" value="ig-verkehr">
+										<p>Verkehr</p>
+									</label>
+									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igwohnen10" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igwohnen10" class="mauticform-checkboxgrp-label">
+										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igwohnen10" type="checkbox" value="ig-wohnen">
+										<p>Wohnen</p>
+									</label>
+								</div>
+							<span class="mauticform-errormsg" style="display: none;"></span>
 						</div>
 
-						<div id="mauticform_mitmachen_was_willst_du_tun" class="mauticform-row mauticform-text mauticform-field-6 mitmachen">
+						<div id="mauticform_mitmachen_was_willst_du_tun" class="mauticform-row mauticform-text mauticform-field-7 mitmachen">
 							<label id="mauticform_label_mitmachen_was_willst_du_tun" for="mauticform_input_mitmachen_was_willst_du_tun" class="mauticform-label mitmachen">Was willst du tun?</label>
 							<textarea placeholder="Platz für deine Ideen & Anliegen" id="mauticform_input_mitmachen_was_willst_du_tun" name="mauticform[was_willst_du_tun]" class="mauticform-textarea mitmachen"></textarea>
 							<span class="mauticform-errormsg" style="display: none;"></span>
 						</div>
 
-						<div id="mauticform_mitmachen_bin_dabei" class="mauticform-row mauticform-button-wrapper mauticform-field-7 mitmachen">
+						<div id="mauticform_mitmachen_bin_dabei" class="mauticform-row mauticform-button-wrapper mauticform-field-8 mitmachen">
 							<button type="submit" name="mauticform[bin_dabei]" id="mauticform_input_mitmachen_bin_dabei" value="" class="mauticform-button btn btn-default mitmachen">Bin dabei*</button>
 						</div>
-						<div id="mauticform_mitmachen_datenschutz" class="mauticform-row mauticform-freehtml mauticform-field-8 mitmachen">
+						<div id="mauticform_mitmachen_datenschutz" class="mauticform-row mauticform-freehtml mauticform-field-9 mitmachen">
 							<div id="mauticform_input_mitmachen_datenschutz" name="mauticform[datenschutz]" value="" class="mauticform-freehtml mitmachen">
 								*Ich stimme der <span style="text-decoration: underline;"><a href="https://links-wien.at/impressum-und-datenschutz/">Datenschutzerklärung</a></span> zu.
 							</div>
