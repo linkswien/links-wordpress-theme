@@ -1,6 +1,7 @@
 /**
- * File bezirk-helper.js.
+ * File helpers.js.
  *
+ * Various helpers such as:
  * Tries to gather which Bezirk to add in case there's a hidden Bezirk field in a form
  * Hide events block on bezirkssites if no events exist
  *
@@ -49,5 +50,23 @@
     if (events_container != null && events_container.childElementCount === 0) {
         events_container.closest('.wp-block-group').classList.add('bg-events-hidden');
     }
-
 })();
+
+/** This section is only needed once per page if manually copying **/
+if (typeof MauticSDKLoaded == 'undefined') {
+    var MauticSDKLoaded = true;
+    var head            = document.getElementsByTagName('head')[0];
+    var script          = document.createElement('script');
+    script.type         = 'text/javascript';
+    script.src          = 'https://mautic.links-wien.at/media/js/mautic-form.js';
+    script.onload       = function() {
+        MauticSDK.onLoad();
+    };
+    head.appendChild(script);
+    var MauticDomain = 'https://mautic.links-wien.at';
+    var MauticLang   = {
+        'submittingMessage': "Please wait..."
+    }
+}else if (typeof MauticSDK != 'undefined') {
+    MauticSDK.onLoad();
+}
