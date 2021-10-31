@@ -20,7 +20,7 @@
 					<?php
 						the_title( '<h1 class="entry-title">', '</h1>' );
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
-						$caption = the_post_thumbnail_caption();
+						$caption = get_the_post_thumbnail_caption();
 						echo '<img loading="lazy" src="' . $image . '" alt="Portrait" class="wp-image-1826">';
 						if ( $caption ) {
 							echo "<figcaption class='menschen-von-links-caption'>" . $caption . "</figcaption>";
