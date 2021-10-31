@@ -1483,7 +1483,8 @@ object {
 	flex-direction: column;
 	margin: 10px 0;
 }
-.mauticform-side-by-side .mauticform-field-container {
+.mauticform-side-by-side .mauticform-field-container,
+.mauticform-side-by-side .mauticform-row {
 	margin: 10px 5px 0;
 	flex: 1;
 }
