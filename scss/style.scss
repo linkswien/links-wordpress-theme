@@ -1525,7 +1525,8 @@ object {
 	margin-right: 10px;
 }
 
-.mauticform-field-container textarea {
+.mauticform-field-container textarea,
+.mauticform-row textarea {
 	height: 5em !important;
 	resize: vertical;
 }
