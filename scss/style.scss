@@ -897,25 +897,27 @@ table {
 		padding: 0;
 		img {
 			position: relative;
-			width: auto;
-			height: auto;
+		}
+		.wp-block-cover__inner-container {
+			display: none;
 		}
 	}
 
 	@media screen and (min-width: 50em) {
 		.newsletterform {
 			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
 			right: 2em;
-			top: 2em;
 			z-index: 100;
-			min-width: 20em;
-			max-width: 32em;
 			width: 30em;
+		
 		}
 
 		.wp-block-cover img {
 				min-height:38em;
 				max-width: 100%;
+				max-height: 42em;
 		}
 	}
 
