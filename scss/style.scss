@@ -1912,9 +1912,8 @@ object {
 	border: none;
 	border-radius: 0px;
 
-	display: grid;
-
 	@media (min-width: 950px) {
+		display: grid;
 		grid-template-columns: 35% 65%;
 	}
 	
