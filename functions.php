@@ -169,7 +169,7 @@ add_action( 'widgets_init', 'links_wien_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function links_wien_theme_scripts() {
-	wp_enqueue_style( 'links-wien-theme-style', get_stylesheet_uri(), array(), '2');  // increase the version every time you push to prod
+	wp_enqueue_style( 'links-wien-theme-style', get_stylesheet_uri(), array(), '3');  // increase the version every time you push to prod
 
 	wp_enqueue_script( 'links-wien-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
