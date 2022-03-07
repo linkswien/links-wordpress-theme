@@ -1034,7 +1034,7 @@ a:active {
 .entry-content > #em-wrapper > .wp-block-cover > .wp-block-cover__inner-container {
 	flex: 0;
 	width: 100%;
-	max-width: 70rem;
+	max-width: 90rem;
 	padding: 1em 2em;
 }
 .entry-content > .wp-block-group.taller,
@@ -1709,9 +1709,6 @@ object {
 
 		@media (min-width: 1256px) {
 			grid-template-columns: 33.333% 33.333% 33.333%;
-			.event {
-				width: 320px;
-			}
 		}
 	}
 }
