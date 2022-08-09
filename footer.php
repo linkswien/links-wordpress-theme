@@ -32,6 +32,8 @@
 					<div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
 
 						<div class="mauticform-side-by-side">
+							<input value="" class="mauticform-input mitmachen" type="text" id="mauticform_input_mitmachen_email2" placeholder="email2" name="mauticform[email2]">
+							<style>#mauticform_input_mitmachen_email2{display:none;}</style>
 							<div id="mauticform_mitmachen_vorname" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required mitmachen" data-validate="vorname" data-validation-type="text">
 								<label id="mauticform_label_mitmachen_vorname" for="mauticform_input_mitmachen_vorname" class="mauticform-label mitmachen">Vorname</label>
 								<input placeholder="Vorname" id="mauticform_input_mitmachen_vorname" name="mauticform[vorname]" value="" class="mauticform-input mitmachen" type="text">
