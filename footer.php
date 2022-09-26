@@ -156,7 +156,7 @@
 				height="62"
 				alt="<?php bloginfo( 'name' ); ?>"
 			/><br/>
-			<a href="mailto:kontakt@links-wien.at"> kontakt@links-wien.at </a> <br/>
+			<a href="mailto:kontakt@links.wien"> kontakt@links.wien </a> <br/>
 			<a class="social-media" href="https://www.facebook.com/linkswien">
 			<svg viewBox="0 0 14 29"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5827 14.8783H8.63563V28.2863H2.78295V14.8783H0V9.62934H2.78295V6.233C2.78295 3.80405 3.87623 0 8.68772 0L13.0222 0.0197677V5.11489H9.87698C9.36078 5.11489 8.63563 5.38732 8.63563 6.54558V9.6349H13.0942L12.5827 14.8783Z" fill="currentColor"/></svg>
 
@@ -167,7 +167,7 @@
 			<a class="social-media" href="https://www.instagram.com/linkswien">
 			<svg viewBox="0 0 28 29"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.7774 20.5457C25.7774 23.6209 23.3645 26.1138 20.3886 26.1138H8.11277C5.13681 26.1138 2.72391 23.6209 2.72391 20.5457V7.8636C2.72391 4.78839 5.13681 2.29611 8.11277 2.29611H20.3886C23.3645 2.29611 25.7774 4.78839 25.7774 7.8636V20.5457ZM20.4195 0H8.08182C3.89584 0 0.501465 3.50628 0.501465 7.83163V20.5783C0.501465 24.9037 3.89584 28.4093 8.08182 28.4093H20.4195C24.6055 28.4093 27.9999 24.9037 27.9999 20.5783V7.83163C27.9999 3.50628 24.6055 0 20.4195 0Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.2508 19.0875C11.6403 19.0875 9.52503 16.9021 9.52503 14.2051C9.52503 11.508 11.6403 9.32135 14.2508 9.32135C16.8619 9.32135 18.9772 11.508 18.9772 14.2051C18.9772 16.9021 16.8619 19.0875 14.2508 19.0875ZM14.2508 6.71777C10.2488 6.71777 7.00439 10.0697 7.00439 14.2051C7.00439 18.3398 10.2488 21.6917 14.2508 21.6917C18.2535 21.6917 21.4979 18.3398 21.4979 14.2051C21.4979 10.0697 18.2535 6.71777 14.2508 6.71777Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.3681 6.46955C23.3681 7.39687 22.6408 8.14832 21.7433 8.14832C20.8451 8.14832 20.1172 7.39687 20.1172 6.46955C20.1172 5.54161 20.8451 4.78955 21.7433 4.78955C22.6408 4.78955 23.3681 5.54161 23.3681 6.46955Z" fill="currentColor"/></svg>
 			</a><br>
-			<a href="https://spenden.links-wien.at" class="cta-footer"> Jetzt unterstützen! </a>
+			<a href="https://spenden.links.wien" class="cta-footer"> Jetzt unterstützen! </a>
 
 
 		</section>
