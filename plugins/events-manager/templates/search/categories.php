@@ -26,7 +26,7 @@
 
 <script>
 	document.getElementById('category').onchange = function() {
-		document.getElementsByClassName("em-search-submit")[0].click();
+		jQuery('.em-search-form').trigger('forcesubmit');
 	}
 </script>
 
