@@ -748,7 +748,6 @@ span.submenu-toggle.toggled {
 	rotate: -180deg;
 }
 
-.main-navigation ul span.submenu-toggle.toggled + ul,
 .main-navigation ul span.submenu-toggle.toggled + ul {
 	display: block;
 }
@@ -765,9 +764,19 @@ span.submenu-toggle.toggled {
 /* special handling for larger screens */
 @media screen and (min-width: 37.5em) {
 
-	/* expand the top level menu items with hover, additionally to when the submenu toggle is clicked */
-	.main-navigation .menu > li:hover > ul  {
+	/* expand the top level menu items with hover */
+	#mainbar .main-navigation .menu > li:hover > ul  {
 		display: block;
+	}
+
+	/* don't expand them with toggle */
+	.main-navigation .menu > li > span.submenu-toggle.toggled + ul {
+		display: none;
+	}
+
+	/* don't rotate them on click */
+	#mainbar .main-navigation .menu > li> span.submenu-toggle.toggled {
+		rotate: 0deg;
 	}
 
 	/* hide the button that toggles the menu */
