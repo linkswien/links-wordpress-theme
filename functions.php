@@ -167,15 +167,16 @@ add_action( 'widgets_init', 'links_wien_theme_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
+ * Increase the version every time there are changes to these to bust the cache.
  */
 function links_wien_theme_scripts() {
-	wp_enqueue_style( 'links-wien-theme-style', get_stylesheet_uri(), array(), '5');  // increase the version every time you push to prod
+	wp_enqueue_style( 'links-wien-theme-style', get_stylesheet_uri(), array(), '6');
 
-	wp_enqueue_script( 'links-wien-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'links-wien-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '2', true );
 
-	wp_enqueue_script( 'links-wien-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'links-wien-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '1', true );
 
-	wp_enqueue_script( 'links-wien-theme-helpers', get_template_directory_uri() . '/js/helpers.js', array(), '20151215', true );
+	wp_enqueue_script( 'links-wien-theme-helpers', get_template_directory_uri() . '/js/helpers.js', array(), '1', true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
