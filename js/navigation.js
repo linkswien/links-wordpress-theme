@@ -4,12 +4,10 @@
  * Handles toggling the navigation menu for small screens
  */
 ( function() {
-	var button, menu1, menu2, toggleableItems;
+	const button = document.getElementById( 'menu-toggle' );
 
-	button = document.getElementById( 'menu-toggle' );
-
-	menu1 = document.getElementById( 'nav1' );
-	menu2 = document.getElementById( 'secondbar' );
+	const menu1 = document.getElementById( 'nav1' );
+	const menu2 = document.getElementById( 'secondbar' );
 
 	menu1.setAttribute( 'aria-expanded', 'false' );
 	menu2.setAttribute( 'aria-expanded', 'false' );
@@ -30,13 +28,23 @@
 		}
 	};
 
-	toggleableItems = document.getElementsByClassName( 'menu-item-has-children' )
+	const toggleableItems = document.getElementsByClassName( 'submenu-toggle' )
+	const topLevelToggleableItems = document.querySelectorAll( '.menu > li > .submenu-toggle' )
 	for (var i = 0; i < toggleableItems.length; i++) {
 		const element = toggleableItems[i];
 		element.onclick = function() {
 			if ( -1 !== element.className.indexOf( 'toggled' ) ) {
 				element.className = element.className.replace( ' toggled', '' );
 			} else {
+				if (window.matchMedia("(min-width: 37.5em)").matches) {
+					// in Desktop view, collapse all top level items if another one was toggled
+					for (var j = 0; j < topLevelToggleableItems.length; j++) {
+						const topLevelElement = topLevelToggleableItems[j];
+						if (!topLevelElement.parentNode.contains(element)) {
+							topLevelElement.className = topLevelElement.className.replace( ' toggled', '' );
+						}
+					}
+				}
 				element.className += ' toggled';
 			}
 		}

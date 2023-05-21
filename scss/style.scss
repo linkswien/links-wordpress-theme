@@ -600,6 +600,14 @@ table {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+#primary-menu {
+	text-align: end;
+}
+
+#primary-menu li{
+	text-align: start;
+}
+
 .menu-tertiary-container {
 	background: #000;
 }
@@ -629,7 +637,7 @@ table {
 	}
 }
 
-#tertiary-menu .toggled ul {
+#tertiary-menu ul {
 	display: block;
 }
 
@@ -683,21 +691,30 @@ table {
 }
 
 .main-navigation ul ul {
+	background-color: #ddd;
+	padding-left: 1.5em;
 	display: none;
 }
+
 .main-navigation ul ul li {
+	padding: 0;
 	width: 100%;
 }
 
-.main-navigation .toggled ul {
+.main-navigation ul li a {
+	display: inline-block;
+	padding: 0.5em 1em;
+}
+
+.main-navigation ul {
 	display: block;
-	background-color: #ddd;
-	padding-left: 1.5em;
+}
+
+.main-navigation ul ul ul{
+	display: none;
 }
 
 .main-navigation a {
-	display: block;
-	padding: 0.5em 1em;
 	color: #000;
 	font-weight: 700;
 	text-decoration: none;
@@ -711,17 +728,32 @@ table {
 	color: $violet;
 }
 
-#tertiary-menu .menu-item-has-children > a::after,
-.main-navigation .menu-item-has-children > a::after {
-	content: "";
-	position: relative;
-	top: -3px;
-	left: 10px;
-	border: solid $orange;
-	border-width: 0 3px 3px 0;
+#tertiary-menu a.submenu-toggle,
+.main-navigation a.submenu-toggle {
+	display: none;
+	position: absolute;
+	left: -10000px;
+}
+
+#tertiary-menu .menu-item-has-children > a.submenu-toggle,
+.main-navigation .menu-item-has-children > a.submenu-toggle {
+	position: initial;
+	width: 1em;
+	height: 1em;
 	display: inline-block;
-	padding: 3px;
-	transform: rotate(45deg);
+	background-image: url("img/arrow-down.svg");
+	background-size: contain;
+	padding: .25em;
+	transition: rotate .5s;
+}
+
+a.submenu-toggle.toggled {
+	rotate: -180deg;
+}
+
+.main-navigation ul a.submenu-toggle.toggled + ul,
+.main-navigation ul a.submenu-toggle.toggled + ul {
+	display: block;
 }
 
 /* Small menu. */
@@ -734,6 +766,11 @@ table {
 }
 
 @media screen and (min-width: 37.5em) {
+
+	.main-navigation .menu > li:hover > ul  {
+		display: block;
+	}
+
 	#tertiary-menu {
 		margin: 0 1em 0 0;
 	}
@@ -779,13 +816,26 @@ table {
 	.main-navigation li {
 		display: inline-block;
 	}
+
+	.main-navigation li li {
+		display: block;
+	}
+
 	.main-navigation li.menu-item-has-children {
 		margin-right: 1em;
 	}
 
-	.main-navigation .toggled ul {
+	.main-navigation ul {
 		padding: 0;
 		background-color: #fff;
+	}
+
+	.main-navigation ul ul li a {
+		width: 100%;
+	}
+	
+	.main-navigation ul ul li.menu-item-has-children a {
+		width: calc(100% - 2.5em);
 	}
 
 	.main-navigation ul ul {
@@ -794,13 +844,15 @@ table {
 		right: 0;
 		background-color: #fff;
 		z-index: 99999;
+		padding: 0;
 	}
 
-	@media(hover: hover) {
-		.main-navigation ul li:hover > ul,
-		.main-navigation ul li.focus > ul {
-			display: block;
-		}
+	.main-navigation ul ul ul {
+		box-shadow: none;
+		position: relative;
+		padding-left: 1em;
+		background-color: #ddd;
+		transition: height 1s;
 	}
 }
 
