@@ -928,6 +928,11 @@ span.submenu-toggle.toggled {
 # Special styles for the newsletter form + main image on the Startpage & Menschen Seite
 --------------------------------------------------------------*/
 
+.entry-content .wp-block-group .newsletterform .wp-block-group__inner-container,
+.entry-content .wp-block-cover .wp-block-cover__inner-container {
+	color: $white !important;
+}
+
 .entry-content > .newsletterhead {
 
 	position: relative;
@@ -939,7 +944,6 @@ span.submenu-toggle.toggled {
 
 	.newsletterform > .wp-block-group__inner-container {
 		background-color: $violet;
-		color: $white;
 		padding: 1em 2em;
 
 		a {
