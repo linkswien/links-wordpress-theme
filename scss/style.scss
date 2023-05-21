@@ -659,11 +659,6 @@ table {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#mainbar {
-	--display: flex;
-	--justify-content: space-between;
-}
-
 #mainbar .main-home {
 	margin: 1em;
 	display: inline-block;
@@ -728,35 +723,37 @@ table {
 	color: $violet;
 }
 
-#tertiary-menu a.submenu-toggle,
-.main-navigation a.submenu-toggle {
+#tertiary-menu span.submenu-toggle,
+.main-navigation span.submenu-toggle {
 	display: none;
 	position: absolute;
 	left: -10000px;
 }
 
-#tertiary-menu .menu-item-has-children > a.submenu-toggle,
-.main-navigation .menu-item-has-children > a.submenu-toggle {
+#tertiary-menu .menu-item-has-children > span.submenu-toggle,
+.main-navigation .menu-item-has-children > span.submenu-toggle {
 	position: initial;
 	width: 1em;
 	height: 1em;
 	display: inline-block;
 	background-image: url("img/arrow-down.svg");
 	background-size: contain;
+	background-repeat: no-repeat;
 	padding: .25em;
 	transition: rotate .5s;
+	cursor: pointer;
 }
 
-a.submenu-toggle.toggled {
+span.submenu-toggle.toggled {
 	rotate: -180deg;
 }
 
-.main-navigation ul a.submenu-toggle.toggled + ul,
-.main-navigation ul a.submenu-toggle.toggled + ul {
+.main-navigation ul span.submenu-toggle.toggled + ul,
+.main-navigation ul span.submenu-toggle.toggled + ul {
 	display: block;
 }
 
-/* Small menu. */
+/* buttons that toggles the whole menu*/
 #menu-toggle {
 	float: right;
 	position: relative;
@@ -765,20 +762,20 @@ a.submenu-toggle.toggled {
 	top: 2em;
 }
 
+/* special handling for larger screens */
 @media screen and (min-width: 37.5em) {
 
+	/* expand the top level menu items with hover, additionally to when the submenu toggle is clicked */
 	.main-navigation .menu > li:hover > ul  {
 		display: block;
 	}
 
-	#tertiary-menu {
-		margin: 0 1em 0 0;
-	}
-
+	/* hide the button that toggles the menu */
 	#menu-toggle {
 		display: none;
 	}
 
+	/* always display the menu */
 	#mainbar,
 	#secondbar {
 		display: flex;
@@ -801,39 +798,31 @@ a.submenu-toggle.toggled {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
-	}
-
-	.main-navigation div {
-		float: right;
-		margin-left: 1em;
+		line-height: 2;
 	}
 
 	.main-navigation ul {
-		display: block;
 		width: auto;
-	}
-
-	.main-navigation li {
-		display: inline-block;
-	}
-
-	.main-navigation li li {
-		display: block;
-	}
-
-	.main-navigation li.menu-item-has-children {
-		margin-right: 1em;
-	}
-
-	.main-navigation ul {
 		padding: 0;
 		background-color: #fff;
 	}
 
+	/* special styling for top level menu items */
+	.main-navigation .menu > li {
+		padding: 0 0.5em;
+		display: inline-block;
+	}
+
+	.main-navigation .menu > li a {
+		padding: 0.5em;
+	}
+
+	/* items on a lower level should fill their parent */
 	.main-navigation ul ul li a {
 		width: 100%;
 	}
 	
+	/* ... except when they have childs, then they need to make space for the toggle */
 	.main-navigation ul ul li.menu-item-has-children a {
 		width: calc(100% - 2.5em);
 	}
@@ -853,6 +842,10 @@ a.submenu-toggle.toggled {
 		padding-left: 1em;
 		background-color: #ddd;
 		transition: height 1s;
+	}
+
+	#tertiary-menu {
+		margin: 0 1em 0 0;
 	}
 }
 
