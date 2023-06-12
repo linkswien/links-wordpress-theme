@@ -856,6 +856,11 @@ span.submenu-toggle.toggled {
 	#tertiary-menu {
 		margin: 0 1em 0 0;
 	}
+
+	/* special case for the Bezirke menu: Since it is so long, it gets two columns */
+	.main-navigation .menu-item-5897 {
+		columns: 2;
+	}
 }
 
 .site-main .comment-navigation,
