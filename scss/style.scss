@@ -379,7 +379,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: Roboto, sans-serif;
+	font-family: "Monument Grotesk", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -391,11 +391,18 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: Agipo, sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin: 1rem 0;
 	clear: both;
 	line-height: 1.25;
 	word-wrap: break-word;
+}
+
+header {
+	font-family: Agipo, sans-serif;
+	font-weight: 700;
 }
 
 h1 a,
@@ -657,6 +664,7 @@ table {
 #mainbar,
 #secondbar {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	font-size: 110%;
 }
 
 #mainbar .main-home {
