@@ -1,0 +1,61 @@
+/** fonts for body text **/
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: local('Monument Grotesk Regular'), local('Monument-Grotesk-Regular'),
+      url('./fonts/monument_grotesk_regular.woff2') format('woff2'),
+      url('./fonts/monument_grotesk_regular.woff') format('woff'),
+      url('./fonts/monument_grotesk_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  ascent-override: 120%;
+}
+
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: local('Monument Grotesk Bold'), local('Monument-Grotesk-Bold'),
+      url('./fonts/monument_grotesk_bold.woff2') format('woff2'),
+      url('./fonts/monument_grotesk_bold.woff') format('woff'),
+      url('./fonts/monument_grotesk_bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  ascent-override: 120%;
+}
+
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: local('Monument Grotesk Italic'), local('Monument-Grotesk-Italic'),
+      url('./fonts/monument_grotesk_italic.woff2') format('woff2'),
+      url('./fonts/monument_grotesk_italic.woff') format('woff'),
+      url('./fonts/monument_grotesk_italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  ascent-override: 120%;
+}
+
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: local('Monument Grotesk BoldItalic'), local('Monument-Grotesk-BoldItalic'),
+      url('./fonts/monument_grotesk_bold_italic.woff2') format('woff2'),
+      url('./fonts/monument_grotesk_bold_italic.woff') format('woff'),
+      url('./fonts/monument_grotesk_bold_italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  ascent-override: 120%;
+}
+
+/** fonts for headlines **/
+@font-face {
+  font-family: 'Agipo';
+  src: local('Agipo Regular'), local('Agipo-Regular'),
+      url('./fonts/agipo_regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Agipo';
+  src: local('Agipo Bold Condensed'), local('Agipo-Bold-Condensed'),
+      url('./fonts/agipo_bold_condensed.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
