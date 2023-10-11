@@ -1575,6 +1575,13 @@ object {
 	height: 100%;
 }
 
+// menschen von links person page
+@media screen and (min-width: 782px) {
+	.menschen-von-links-text-container {
+	  padding-left: 2.5em;
+	}
+  }
+
 /*--------------------------------------------------------------
 ## 404 page
 --------------------------------------------------------------*/

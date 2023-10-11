@@ -28,7 +28,7 @@
 					?>
 				</figure>
 			</div>
-			<div class="wp-block-column" style="flex-basis:66.66%">
+			<div class="wp-block-column menschen-von-links-text-container" style="flex-basis:66.66%">
 				<?php
 				the_content( sprintf(
 					wp_kses(
