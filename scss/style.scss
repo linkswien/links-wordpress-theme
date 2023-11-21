@@ -2038,9 +2038,14 @@ main > .event {
 	display: none !important;
 }
 
+// left-right buttons on post slider
 #page .uagb-slick-carousel {
 	.slick-next, .slick-prev {
 		padding: 0;
+
+		@media (max-width: 976px) {
+			visibility: hidden;
+		}
 	}
 	.slick-next {
 		right: 0;
