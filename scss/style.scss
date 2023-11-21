@@ -2037,3 +2037,15 @@ main > .event {
 .bg-events-hidden {
 	display: none !important;
 }
+
+#page .uagb-slick-carousel {
+	.slick-next, .slick-prev {
+		padding: 0;
+	}
+	.slick-next {
+		right: 0;
+	}
+	.slick-prev {
+		left: 0;
+	}
+}
