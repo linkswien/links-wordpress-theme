@@ -183,14 +183,6 @@ function links_wien_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'links_wien_theme_scripts' );
 
 /**
- * Add Open Graph Language Attribute
- */
-function add_opengraph_doctype( $output ) {
-        return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
-    }
-add_filter('language_attributes', 'add_opengraph_doctype');
-
-/**
  * Add Open Graph Tags
  */
 function insert_og_in_head() {
@@ -253,7 +245,7 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+// require get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
@@ -278,7 +270,7 @@ require __DIR__ . '/inc/bezirkssite-header.php';
 require __DIR__ . '/inc/menschen-von-links.php';
 
 /**
- * Activate shortcuts in footers.
+ * Activate shortcodes in footers.
  */
 add_filter('widget_text', 'shortcode_unautop');
 add_filter('widget_text', 'do_shortcode');

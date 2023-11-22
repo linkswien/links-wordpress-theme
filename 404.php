@@ -26,7 +26,7 @@ get_header();
 			<p><?php esc_html_e( 'While you are here, how about a donation to LINKS?', 'links-wien-theme'); ?></p>
 
 				<p>
-					<a href="https://spenden.links-wien.at" class="button">
+					<a href="https://spenden.links.wien" class="button">
 						<?php esc_html_e( 'Donate now', 'links-wien-theme'); ?>
 </a>
 				</p>
