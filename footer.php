@@ -64,13 +64,36 @@
 						<div id="mauticform_mitmachen_bezirk" class="mauticform-row mauticform-select mauticform-field-5 mauticform-required mitmachen" data-validate="bezirk" data-validation-type="select">
 							<label id="mauticform_label_mitmachen_bezirk" for="mauticform_input_mitmachen_bezirk" class="mauticform-label mitmachen">Bezirk</label>
 							<select id="mauticform_input_mitmachen_bezirk" name="mauticform[bezirk]" value="" class="mauticform-selectbox mitmachen">
-								<option value="">Wähle deinen Bezirk aus…</option>                    <option value="1010">1010 – Innere Stadt</option>                    <option value="1020">1020 – Leopoldstadt</option>                    <option value="1030">1030 – Landstraße</option>                    <option value="1040">1040 – Wieden</option>                    <option value="1050">1050 – Margareten</option>                    <option value="1060">1060 – Mariahilf</option>                    <option value="1070">1070 – Neubau</option>                    <option value="1080">1080 – Josefstadt</option>                    <option value="1090">1090 – Alsergrund</option>                    <option value="1100">1100 – Favoriten</option>                    <option value="1110">1110 – Simmering</option>                    <option value="1120">1120 – Meidling</option>                    <option value="1130">1130 – Hietzing</option>                    <option value="1140">1140 – Penzing</option>                    <option value="1150">1150 – Rudolfsheim-Fünfhaus</option>                    <option value="1160">1160 – Ottakring</option>                    <option value="1170">1170 – Hernals</option>                    <option value="1180">1180 – Währing</option>                    <option value="1190">1190 – Döbling</option>                    <option value="1200">1200 – Brigittenau</option>                    <option value="1210">1210 – Floridsdorf</option>                    <option value="1220">1220 – Donaustadt</option>                    <option value="1230">1230 – Liesing</option>
+								<option value="">Wähle deinen Bezirk aus…</option>
+								<option value="1010">1010 – Innere Stadt</option>
+								<option value="1020">1020 – Leopoldstadt</option>
+								<option value="1030">1030 – Landstraße</option>
+								<option value="1040">1040 – Wieden</option>
+								<option value="1050">1050 – Margareten</option>
+								<option value="1060">1060 – Mariahilf</option>
+								<option value="1070">1070 – Neubau</option>
+								<option value="1080">1080 – Josefstadt</option>
+								<option value="1090">1090 – Alsergrund</option>
+								<option value="1100">1100 – Favoriten</option>
+								<option value="1110">1110 – Simmering</option>
+								<option value="1120">1120 – Meidling</option>
+								<option value="1130">1130 – Hietzing</option>
+								<option value="1140">1140 – Penzing</option>
+								<option value="1150">1150 – Rudolfsheim-Fünfhaus</option>
+								<option value="1160">1160 – Ottakring</option>
+								<option value="1170">1170 – Hernals</option>
+								<option value="1180">1180 – Währing</option>
+								<option value="1190">1190 – Döbling</option>
+								<option value="1200">1200 – Brigittenau</option>
+								<option value="1210">1210 – Floridsdorf</option>
+								<option value="1220">1220 – Donaustadt</option>
+								<option value="1230">1230 – Liesing</option>
 							</select>
 							<span class="mauticform-errormsg" style="display: none;">Bitte wähle deinen Bezirk aus!</span>
 						</div>
 
 						<div id="mauticform_mitmachen_wofur_interessierst_du_di" class="mauticform-row mauticform-checkboxgrp mauticform-field-6" style="margin-top: 3rem;">
-							<label class="mauticform-label" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_Antirassismus1">Wofür interessierst du dich?</label>
+							<label class="mauticform-label">Wofür interessierst du dich?</label>
 								<div class="mauticform-side-by-side">
 									<label id="mauticform_checkboxgrp_label_wofur_interessierst_du_di_igantirassismus0" for="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0" class="mauticform-checkboxgrp-label">
 										<input class="mauticform-checkboxgrp-checkbox" name="mauticform[wofur_interessierst_du_di][]" id="mauticform_checkboxgrp_checkbox_wofur_interessierst_du_di_igantirassismus0" type="checkbox" value="ig-antirassismus">
