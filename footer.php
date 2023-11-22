@@ -23,7 +23,7 @@
 
 
 			<div id="mauticform_wrapper_mitmachen" class="mauticform_wrapper">
-				<form autocomplete="false" role="form" method="post" action="https://mautic.links-wien.at/form/submit?formId=8" id="mauticform_mitmachen" data-mautic-form="mitmachen" enctype="multipart/form-data" mitmachen>
+				<form autocomplete="false" role="form" method="post" action="https://mautic.links.wien/form/submit?formId=8" id="mauticform_mitmachen" data-mautic-form="mitmachen" enctype="multipart/form-data" mitmachen>
 					<div class="mauticform-error" id="mauticform_mitmachen_error"></div>
 					<div class="mauticform-message" id="mauticform_mitmachen_message"></div>
 					<div class="mauticform-innerform">
@@ -131,7 +131,7 @@
 						</div>
 						<div id="mauticform_mitmachen_datenschutz" class="mauticform-row mauticform-freehtml mauticform-field-9 mitmachen">
 							<div id="mauticform_input_mitmachen_datenschutz" name="mauticform[datenschutz]" value="" class="mauticform-freehtml mitmachen">
-								*Ich stimme der <span style="text-decoration: underline;"><a href="https://links-wien.at/impressum-und-datenschutz/">Datenschutzerklärung</a></span> zu.
+								*Ich stimme der <span style="text-decoration: underline;"><a href="https://links.wien/impressum/">Datenschutzerklärung</a></span> zu.
 							</div>
 						</div>
 

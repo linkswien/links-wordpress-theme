@@ -58,12 +58,12 @@ if (typeof MauticSDKLoaded == 'undefined') {
     var head            = document.getElementsByTagName('head')[0];
     var script          = document.createElement('script');
     script.type         = 'text/javascript';
-    script.src          = 'https://mautic.links-wien.at/media/js/mautic-form.js';
+    script.src          = 'https://mautic.links.wien/media/js/mautic-form.js';
     script.onload       = function() {
         MauticSDK.onLoad();
     };
     head.appendChild(script);
-    var MauticDomain = 'https://mautic.links-wien.at';
+    var MauticDomain = 'https://mautic.links.wien';
     var MauticLang   = {
         'submittingMessage': "Please wait..."
     }
