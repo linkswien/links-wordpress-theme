@@ -2038,7 +2038,9 @@ main > .event {
 	display: none !important;
 }
 
-// left-right buttons on post slider
+/*--------------------------------------------------------------
+	## left-right buttons on post slider
+--------------------------------------------------------------*/
 #page .uagb-slick-carousel {
 	.slick-next, .slick-prev {
 		padding: 0;
@@ -2053,4 +2055,14 @@ main > .event {
 	.slick-prev {
 		left: 0;
 	}
+}
+
+/*--------------------------------------------------------------
+	## overlay over embedded content from Complianz plugin 
+--------------------------------------------------------------*/
+#page button.cmplz-blocked-content-notice { // overriding '#page button' styles
+	text-transform: none;
+	font-size: inherit;
+	font-style: normal;
+	margin: 0;
 }
