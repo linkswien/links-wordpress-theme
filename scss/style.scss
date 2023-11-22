@@ -2066,3 +2066,10 @@ main > .event {
 	font-style: normal;
 	margin: 0;
 }
+
+/*--------------------------------------------------------------
+	## post timeline (Spectra plugin)
+--------------------------------------------------------------*/
+.uagb-timeline__icon-new {
+	font-family: initial; //unset the font family because that messes with the alignment of the post timeline icon on firefox
+}
