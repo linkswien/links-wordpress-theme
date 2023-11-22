@@ -2073,3 +2073,12 @@ main > .event {
 .uagb-timeline__icon-new {
 	font-family: initial; //unset the font family because that messes with the alignment of the post timeline icon on firefox
 }
+
+/*--------------------------------------------------------------
+	## location pages
+--------------------------------------------------------------*/
+.location {
+	max-width: 50rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
