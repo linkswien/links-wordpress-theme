@@ -14,9 +14,9 @@ jobs:
     steps:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-        
+
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: compile style.scss to style.css
-        run: sass scss/style.scss style.css
+        run: dart-sass scss/style.scss style.css
