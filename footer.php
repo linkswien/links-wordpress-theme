@@ -172,7 +172,7 @@
 
 	<footer id="footer-2" class="widget-area">
 
-		<section>
+		<section class="widget">
 		<img
 				src="<?php echo get_template_directory_uri() . '/img/links_logo_light.svg'; ?>"
 				width="160"

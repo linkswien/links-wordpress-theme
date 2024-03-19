@@ -1276,15 +1276,25 @@ footer a.cta-footer:hover {
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 42em) {
-	#footer-1, #footer-2 {
-		ul.menu {
-			display: unset;
-			li {
-				margin: .5em 0;
-			}
-		}
-	}
+#footer-2 #nav_menu-2 {
+	margin: 0 2em;
+}
+
+#footer-2 .menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	row-gap: 1em;
+	column-gap: 3em;
+}
+
+#footer-2 .menu-item {
+	font-weight: bold;
+}
+
+#footer-2 .sub-menu .menu-item {
+	font-weight: normal;
+	display: flex;
 }
 
 /*--------------------------------------------------------------
@@ -1745,26 +1755,6 @@ object {
 	#footer-1 .headline-container {
 		flex-basis: 100%;
 	}
-}
-
-#footer-2 .menu {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 35em;
-}
-
-#footer-2 .menu-item {
-	font-weight: bold;
-	margin-right: 1em;
-}
-
-#footer-2 .menu-item-has-children {
-	margin-right: 3em;
-}
-
-#footer-2 .sub-menu .menu-item {
-	font-weight: normal;
-	display: flex;
 }
 
 /*--------------------------------------------------------------
