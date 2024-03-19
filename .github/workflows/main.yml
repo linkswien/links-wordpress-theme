@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: deploys the Theme to production (https://links.wien)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+        
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: compile style.scss to style.css
+        run: sass scss/style.scss style.css
