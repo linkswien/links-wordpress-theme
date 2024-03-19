@@ -9,7 +9,10 @@ on:
 
 jobs:
   deploy:
-    name: deploys the Theme to production (https://links.wien)
+    name: deploys the theme to production
+    environment:
+      name:
+      url: https://links.wien
     runs-on: ubuntu-latest
     steps:
       - name: Install Dart Sass
