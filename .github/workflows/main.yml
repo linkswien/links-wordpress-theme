@@ -32,6 +32,4 @@ jobs:
       - name: transfer files to server via sftp
         env: 
           SSHPASS: ${{ secrets.SFTP_PASSWORD }}
-        run: |
-          sshpass -e sftp ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }} <<< 'put -fR * /httpdocs/wp-content/themes/links-wien-theme'
-          sshpass -e sftp ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }} <<< 'ls -l  /httpdocs/wp-content/themes/links-wien-theme'
+        run: sshpass -e sftp ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }} <<< 'put -R * /httpdocs/wp-content/themes/links-wien-theme'
