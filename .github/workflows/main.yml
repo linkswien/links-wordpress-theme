@@ -25,8 +25,9 @@ jobs:
         run: dart-sass scss/style.scss style.css --style compressed
 
       - name: ssh-keyscan for sftp
-        run: mkdir ~/.ssh && touch ~/.ssh/known_hosts
-        run: ssh-keyscan ${{ secrets.SFTP_SERVER }} >> ~/.ssh/known_hosts
+        run: |
+          mkdir ~/.ssh && touch ~/.ssh/known_hosts
+          ssh-keyscan ${{ secrets.SFTP_SERVER }} >> ~/.ssh/known_hosts
 
       - name: transfer files to server via sftp
         env: 
