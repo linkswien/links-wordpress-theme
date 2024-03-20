@@ -170,7 +170,7 @@ add_action( 'widgets_init', 'links_wien_theme_widgets_init' );
  * Increase the version every time there are changes to these to bust the cache.
  */
 function links_wien_theme_scripts() {
-	wp_enqueue_style( 'links-wien-theme-style', get_stylesheet_uri(), array(), '12');
+	wp_enqueue_style( 'links-wien-theme-style', get_stylesheet_uri(), array(), '13');
 
 	wp_enqueue_script( 'links-wien-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '2', true );
 
