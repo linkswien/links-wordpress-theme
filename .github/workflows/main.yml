@@ -25,4 +25,4 @@ jobs:
         run: dart-sass scss/style.scss style.css
 
       - name: transfer files to server via sftp
-        run: sftp --password=${{ secrets.SFTP_PASSWORD }} ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }} <<< 'put -r * /httpdocs/wp-content/themes/links-wien-theme'
+        run: sftp --password="${{ secrets.SFTP_PASSWORD }}" ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }} <<< 'put -r * /httpdocs/wp-content/themes/links-wien-theme'
