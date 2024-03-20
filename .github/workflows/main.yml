@@ -24,6 +24,9 @@ jobs:
       - name: compile style.scss to style.css
         run: dart-sass scss/style.scss style.css --style compressed
 
+      - name: ssh-keyscan for sftp
+        run: ssh-keyscan ${{ secrets.SFTP_SERVER }} >> ~/.ssh/known_hosts
+
       - name: transfer files to server via sftp
         env: 
           SSHPASS: ${{ secrets.SFTP_PASSWORD }}
