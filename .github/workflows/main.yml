@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: compile style.scss to style.css
-        run: dart-sass scss/style.scss style.css
+        run: dart-sass scss/style.scss style.css --style compressed
 
       - name: transfer files to server via sftp
         run: sftp --password="${{ secrets.SFTP_PASSWORD }}" ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }} <<< 'put -r * /httpdocs/wp-content/themes/links-wien-theme'
