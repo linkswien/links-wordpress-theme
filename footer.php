@@ -12,8 +12,8 @@
 ?>
 
 	<footer id="footer-1" class="hide-for-subscriber">
-		<div class="footer-form-container">
-			<iframe src="https://actionnetwork.org/forms/mach-mit-beim-wien-wahlkampf/" width="100%" height="100%"></iframe>
+		<div class="footer-form-container" style="height: 1100px;">
+			<iframe src="https://actionnetwork.org/forms/mach-mit-beim-wien-wahlkampf/" width="100%" height="100%" style="border: none;"></iframe>
 		</div>
 	</footer>
 
